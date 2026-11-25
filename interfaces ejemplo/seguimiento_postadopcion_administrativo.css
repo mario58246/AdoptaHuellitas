@@ -1,0 +1,7243 @@
+/* Seguimiento post-adopción */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: relative;
+width: 1440px;
+height: 1641px;
+min-height: 1320px;
+
+background: #F4F8F7;
+
+
+/* Barra lateral */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px 18px;
+gap: 28px;
+
+width: 232px;
+height: 1641px;
+min-height: 1320px;
+
+background: #102825;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Marca */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 194px;
+height: 38px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Símbolo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 38px;
+height: 38px;
+
+background: #167C6C;
+border-radius: 12px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* heart-handshake */
+
+width: 21px;
+height: 21px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 16.67%;
+bottom: 12.5%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Nombre */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 146px;
+height: 34px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Nombre */
+
+width: 140px;
+height: 22px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Descriptor */
+
+width: 146px;
+height: 12px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+line-height: 12px;
+text-transform: uppercase;
+
+color: #91A8A3;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Navegación */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 6px;
+
+width: 196px;
+height: 244px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Elemento de navegación */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 12px;
+gap: 11px;
+
+width: 196px;
+height: 44px;
+
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* layout-dashboard */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1px solid #91A8A3;
+
+
+/* Etiqueta */
+
+width: 58px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #AFC0BC;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Elemento de navegación */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 12px;
+gap: 11px;
+
+width: 196px;
+height: 44px;
+
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* paw-print */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.36%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.34%;
+
+border: 1px solid #91A8A3;
+
+
+/* Etiqueta */
+
+width: 61px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #AFC0BC;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Elemento de navegación */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 12px;
+gap: 11px;
+
+width: 196px;
+height: 44px;
+
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* file-heart */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.48%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #91A8A3;
+
+
+/* Etiqueta */
+
+width: 69px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #AFC0BC;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Elemento de navegación */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 12px;
+gap: 11px;
+
+width: 196px;
+height: 44px;
+
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* stethoscope */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 12.5%;
+
+border: 1px solid #91A8A3;
+
+
+/* Etiqueta */
+
+width: 101px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #AFC0BC;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Elemento de navegación */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 12px;
+gap: 11px;
+
+width: 196px;
+height: 44px;
+
+background: rgba(255, 255, 255, 0.0862745);
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* clipboard-check */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #8DE0CB;
+
+
+/* Etiqueta */
+
+width: 88px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Refugio */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 14px;
+gap: 10px;
+
+width: 196px;
+height: 62px;
+
+background: rgba(255, 255, 255, 0.0509804);
+border-radius: 12px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Identidad */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 168px;
+height: 34px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Avatar */
+
+width: 34px;
+height: 34px;
+
+background: #D9F0EA;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Datos */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 124px;
+height: 29px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Nombre */
+
+width: 124px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Rol */
+
+width: 124px;
+height: 12px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #91A8A3;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Área de trabajo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 1208px;
+height: 1641px;
+min-height: 1320px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Barra superior */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px 32px;
+
+width: 1208px;
+height: 68px;
+
+background: #FFFFFF;
+border-bottom: 1px solid #DCE8E5;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Contexto */
+
+width: 232px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Acciones */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 86px;
+height: 38px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Notificaciones */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 38px;
+height: 38px;
+
+background: #F4F8F7;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* bell */
+
+width: 17px;
+height: 17px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #17312E;
+
+
+/* Perfil */
+
+width: 36px;
+height: 36px;
+
+background: url(Subject: friendly young Latina animal shelter coordinator portrait, Action: posing for a professional headshot with a warm, welcoming smile, Setting / Scene: clean and modern office environment with a neutral mint background, Style / Medium: high-resolution professional portrait photography, Lighting / Color: soft natural light, bright and airy color palette with soft mint and warm skin tones, Perspective: eye-level, waist-up portrait framing, Camera Lens: 85mm lens, shallow depth of field with softly blurred background, Aspect Ratio: 1:1);
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Contenido */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 26px 30px 34px;
+gap: 18px;
+
+width: 1208px;
+height: 1573px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Encabezado de página */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-end;
+padding: 0px;
+
+width: 1148px;
+height: 85px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Texto */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 959px;
+height: 85px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Sección */
+
+width: 156px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+text-transform: uppercase;
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 959px;
+height: 36px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 112%;
+/* idéntico a la altura del cuadro o 36px */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 959px;
+height: 20px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 145%;
+/* o 20px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Botón */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 16px;
+gap: 8px;
+
+width: 189px;
+height: 42px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* message-circle */
+
+width: 16px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #17312E;
+
+
+/* Etiqueta */
+
+width: 133px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Resumen de seguimiento */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 16px;
+gap: 18px;
+
+width: 1148px;
+height: 93px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 14px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Foto */
+
+width: 58px;
+height: 58px;
+
+background: url(Candid pet care photography of a happy caramel mixed breed dog named Nala at home with her adopter, posing happily and looking at the camera, wearing a teal collar, set in a warm sunlit living room of a cozy home. Warm soft natural sunlight streaming through a window, vibrant and cozy color palette, eye-level medium shot, 50mm lens, soft blurred background, 1:1 aspect ratio..jpg);
+border-radius: 12px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Adopción */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 210px;
+height: 56px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Identidad */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 7px;
+
+width: 145px;
+height: 25px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Nombre */
+
+width: 34px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 10px;
+gap: 6px;
+
+width: 104px;
+height: 25px;
+
+background: #E4F0FC;
+border-radius: 999px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 84px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 13px;
+
+color: #3778C2;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Adoptante */
+
+width: 193px;
+height: 12px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Código */
+
+width: 90px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #91A29E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Progreso */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 7px;
+
+width: 649px;
+height: 27px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 1;
+
+
+/* Texto */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+
+width: 649px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 150px;
+height: 12px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 12px;
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 78px;
+height: 12px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Barra */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 649px;
+height: 8px;
+
+background: #EDF6F3;
+border-radius: 999px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Completado */
+
+width: 260px;
+height: 8px;
+
+background: #167C6C;
+border-radius: 999px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Próxima acción */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px;
+gap: 3px;
+
+width: 145px;
+height: 61px;
+
+background: #FFF1D6;
+border-radius: 9px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 87px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #B7791F;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 65px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Faltan */
+
+width: 68px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #B7791F;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Seguimiento y gestión */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 18px;
+
+width: 1148px;
+height: 1044px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Matriz de reportes */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 780px;
+height: 558px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Cabecera */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 780px;
+height: 34px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Texto */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 3px;
+
+width: 200px;
+height: 34px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 140px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 200px;
+height: 12px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Leyenda */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 395px;
+height: 25px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 10px;
+gap: 6px;
+
+width: 89px;
+height: 25px;
+
+background: #E1F4E9;
+border-radius: 999px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 69px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 13px;
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 10px;
+gap: 6px;
+
+width: 77px;
+height: 25px;
+
+background: #E4F0FC;
+border-radius: 999px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 57px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 13px;
+
+color: #3778C2;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 10px;
+gap: 6px;
+
+width: 89px;
+height: 25px;
+
+background: #FFF1D6;
+border-radius: 999px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 69px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 13px;
+
+color: #B7791F;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 10px;
+gap: 6px;
+
+width: 116px;
+height: 25px;
+
+background: #FCE8EA;
+border-radius: 999px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 96px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 13px;
+
+color: #C64B52;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Reportes */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 780px;
+height: 446px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #E1F4E9;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 6px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #27865D;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* image */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #E1F4E9;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 8px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #27865D;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* play-circle */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #E1F4E9;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 8px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #27865D;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* image */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #E1F4E9;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 8px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #27865D;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* file-check-2 */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #E1F4E9;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 8px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #27865D;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* image */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #E1F4E9;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 8px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #27865D;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* play-circle */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #E1F4E9;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 7px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #27865D;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* image */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #E1F4E9;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 8px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #27865D;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* file-check-2 */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #E4F0FC;
+border: 2px solid #3778C2;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 8;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #E4F0FC;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 8px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #3778C2;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #3778C2;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #3778C2;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* image */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 9;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #FFF1D6;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 14px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #B7791F;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #B7791F;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #B7791F;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* file-check-2 */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 10;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #FCE8EA;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 11px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #C64B52;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #C64B52;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #C64B52;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* file-check-2 */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 11;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #FFF1D6;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 13px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #B7791F;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #B7791F;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #B7791F;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* file-check-2 */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 12;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #FFF1D6;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 13px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #B7791F;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #B7791F;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #B7791F;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* file-check-2 */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 13;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #FFF1D6;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 15px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #B7791F;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #B7791F;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #B7791F;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* file-check-2 */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Reporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px;
+gap: 8px;
+
+width: 138px;
+height: 142px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 11px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 14;
+flex-grow: 0;
+
+
+/* Número y estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 116px;
+height: 26px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Número */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 26px;
+height: 26px;
+
+background: #FFF1D6;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 15px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #B7791F;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 8px;
+height: 8px;
+
+background: #B7791F;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Periodo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 116px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mes */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fecha */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Estado */
+
+width: 116px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #B7791F;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 116px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* file-check-2 */
+
+width: 12px;
+height: 12px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #91A29E;
+
+
+/* Detalle */
+
+width: 99px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Alerta */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px;
+gap: 10px;
+
+width: 780px;
+height: 54px;
+
+background: #FCE8EA;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* circle-alert */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #C64B52;
+
+
+/* Mensaje */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 728px;
+height: 30px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Título */
+
+width: 728px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #C64B52;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 728px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Panel lateral */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 14px;
+
+width: 350px;
+height: 1044px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Revisión administrativa */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+gap: 11px;
+
+width: 350px;
+height: 591px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 14px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Encabezado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 318px;
+height: 33px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Texto */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 3px;
+
+width: 163px;
+height: 33px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 163px;
+height: 18px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 100px;
+height: 12px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 10px;
+gap: 6px;
+
+width: 63px;
+height: 25px;
+
+background: #E4F0FC;
+border-radius: 999px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 43px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 13px;
+
+color: #3778C2;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Resumen de evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 12px;
+gap: 8px;
+
+width: 318px;
+height: 79px;
+
+background: #F4F8F7;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 93px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Texto */
+
+width: 294px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Formato */
+
+width: 294px;
+height: 12px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #91A29E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vista previa */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 318px;
+height: 159px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+width: 318px;
+height: 118px;
+
+background: url(candid photography of a happy adopted caramel mixed breed dog playing with owner, playing and interacting joyfully in a bright apartment, wholesome post adoption evidence photo, natural daylight, warm tones, eye-level shot, 35mm lens);
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Archivo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 9px;
+gap: 8px;
+
+width: 318px;
+height: 33px;
+
+background: #F4F8F7;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* images */
+
+width: 15px;
+height: 15px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #3778C2;
+
+
+/* Nombre */
+
+width: 256px;
+height: 12px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* external-link */
+
+width: 13px;
+height: 13px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1px solid #667975;
+
+
+/* Observaciones */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px;
+gap: 4px;
+
+width: 318px;
+height: 63px;
+
+background: #EDF6F3;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 155px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Texto */
+
+width: 298px;
+height: 28px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 140%;
+/* o 14px */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Nota interna */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 6px;
+
+width: 318px;
+height: 63px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 71px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Entrada */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 12px;
+gap: 8px;
+
+width: 318px;
+height: 42px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 9px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 294px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #91A29E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Alerta */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px;
+gap: 10px;
+
+width: 318px;
+height: 54px;
+
+background: #E1F4E9;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* circle-check */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #27865D;
+
+
+/* Mensaje */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 266px;
+height: 30px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Título */
+
+width: 266px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 266px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Acciones */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 318px;
+height: 42px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Botón */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 16px;
+gap: 8px;
+
+width: 155px;
+height: 42px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Etiqueta */
+
+width: 110px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Botón */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 16px;
+gap: 8px;
+
+width: 155px;
+height: 42px;
+
+background: #0F5F54;
+box-shadow: 0px 5px 14px rgba(22, 124, 108, 0.2);
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* badge-check */
+
+width: 16px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.29%;
+right: 8.35%;
+top: 8.35%;
+bottom: 8.32%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Etiqueta */
+
+width: 117px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Revisión del refugio */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+gap: 11px;
+
+width: 350px;
+height: 439px;
+
+background: #FFFFFF;
+border: 1.5px solid #3778C2;
+border-radius: 14px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Encabezado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 318px;
+height: 33px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Texto */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 3px;
+
+width: 139px;
+height: 33px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 139px;
+height: 18px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 95px;
+height: 12px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 10px;
+gap: 6px;
+
+width: 76px;
+height: 25px;
+
+background: #E4F0FC;
+border-radius: 999px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Indicador */
+
+width: 7px;
+height: 7px;
+
+background: #3778C2;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 43px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 13px;
+
+color: #3778C2;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Evidencia */
+
+width: 318px;
+height: 118px;
+
+background: url(candid photography of a happy adopted caramel mixed breed dog playing with owner, playing and interacting joyfully in a bright apartment, wholesome post adoption evidence photo, natural daylight, warm tones, eye-level shot, 35mm lens);
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Archivo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 9px;
+gap: 8px;
+
+width: 318px;
+height: 33px;
+
+background: #F4F8F7;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* images */
+
+width: 15px;
+height: 15px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #3778C2;
+
+
+/* Nombre */
+
+width: 256px;
+height: 12px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* external-link */
+
+width: 13px;
+height: 13px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1px solid #667975;
+
+
+/* Observaciones */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px;
+gap: 4px;
+
+width: 318px;
+height: 63px;
+
+background: #EDF6F3;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 155px;
+height: 11px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Texto */
+
+width: 298px;
+height: 28px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 140%;
+/* o 14px */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Campo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 6px;
+
+width: 318px;
+height: 63px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 71px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Entrada */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 12px;
+gap: 8px;
+
+width: 318px;
+height: 42px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 9px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 294px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #91A29E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Acciones */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 318px;
+height: 42px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Botón */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 16px;
+gap: 8px;
+
+width: 155px;
+height: 42px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Etiqueta */
+
+width: 110px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Botón */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 16px;
+gap: 8px;
+
+width: 155px;
+height: 42px;
+
+background: #0F5F54;
+box-shadow: 0px 5px 14px rgba(22, 124, 108, 0.2);
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* badge-check */
+
+width: 16px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.29%;
+right: 8.35%;
+top: 8.35%;
+bottom: 8.32%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Etiqueta */
+
+width: 117px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Confirmación y estados */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 1148px;
+height: 237px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Confirmación de evidencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 360px;
+height: 237px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Modal */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px;
+gap: 18px;
+
+width: 360px;
+height: 237px;
+
+background: #FFFFFF;
+box-shadow: 0px 20px 48px rgba(16, 40, 37, 0.2);
+border-radius: 18px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Encabezado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+
+width: 312px;
+height: 63px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Texto */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 5px;
+
+width: 280px;
+height: 63px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Título */
+
+width: 280px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 280px;
+height: 34px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 140%;
+/* o 17px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Cerrar */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 32px;
+height: 32px;
+
+background: #F4F8F7;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* x */
+
+width: 16px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+border: 1px solid #667975;
+
+
+/* Contenido */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 312px;
+height: 108px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Alerta */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px;
+gap: 10px;
+
+width: 312px;
+height: 54px;
+
+background: #E1F4E9;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* circle-check */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #27865D;
+
+
+/* Mensaje */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 260px;
+height: 30px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Título */
+
+width: 260px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #27865D;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 260px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Acciones */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 312px;
+height: 42px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Botón */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 16px;
+gap: 8px;
+
+width: 152px;
+height: 42px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Etiqueta */
+
+width: 58px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Botón */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 16px;
+gap: 8px;
+
+width: 152px;
+height: 42px;
+
+background: #167C6C;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* badge-check */
+
+width: 16px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.29%;
+right: 8.35%;
+top: 8.35%;
+bottom: 8.32%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Etiqueta */
+
+width: 69px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;

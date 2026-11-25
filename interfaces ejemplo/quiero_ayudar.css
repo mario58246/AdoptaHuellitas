@@ -1,0 +1,5093 @@
+/* Quiero ayudar · Adopta Huellitas */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: relative;
+width: 1440px;
+height: 3442px;
+
+background: #F4F8F7;
+
+
+/* Navegación principal */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px 56px;
+
+width: 1440px;
+height: 85px;
+
+background: #FFFFFF;
+border-bottom: 1px solid #DCE8E5;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Marca */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 195px;
+height: 38px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Símbolo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 38px;
+height: 38px;
+
+background: #167C6C;
+border-radius: 12px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vínculo */
+
+box-sizing: border-box;
+
+width: 21px;
+height: 19px;
+
+border: 1.5px solid #FFFFFF;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Nombre */
+
+width: 147px;
+height: 22px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Enlaces */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 28px;
+
+width: 400px;
+height: 38px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Enlace */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px 0px 0px;
+gap: 8px;
+
+width: 33px;
+height: 38px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 33px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Indicador activo */
+
+width: 33px;
+height: 3px;
+
+border-radius: 2px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Enlace */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px 0px 0px;
+gap: 8px;
+
+width: 136px;
+height: 38px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 136px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Indicador activo */
+
+width: 136px;
+height: 3px;
+
+border-radius: 2px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Enlace */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px 0px 0px;
+gap: 8px;
+
+width: 93px;
+height: 38px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 93px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Indicador activo */
+
+width: 93px;
+height: 3px;
+
+border-radius: 2px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Enlace */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 11px 0px 0px;
+gap: 8px;
+
+width: 54px;
+height: 38px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 54px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Indicador activo */
+
+width: 54px;
+height: 3px;
+
+border-radius: 2px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Acciones */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 18px;
+
+width: 247px;
+height: 42px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Ayudar */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 16px;
+gap: 8px;
+
+width: 146px;
+height: 42px;
+
+background: #167C6C;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vínculo */
+
+box-sizing: border-box;
+
+width: 16px;
+height: 14px;
+
+border: 1px solid #FFFFFF;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 90px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Sesión */
+
+width: 83px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Presentación de donaciones */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 48px 64px;
+gap: 72px;
+
+width: 1440px;
+height: 406px;
+
+background: #EDF6F3;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Propósito */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 820px;
+height: 235px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Presentación */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 14px;
+
+width: 820px;
+height: 197px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Sección */
+
+width: 820px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 820px;
+height: 102px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 116%;
+/* o 51px */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 820px;
+height: 52px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 165%;
+/* o 26px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Motivación */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 310px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* heart */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 16.6%;
+bottom: 12.5%;
+
+border: 1.7px solid #167C6C;
+
+
+/* Mensaje */
+
+width: 282px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fotografía */
+
+width: 420px;
+height: 310px;
+
+background: url(Heartwarming candid editorial photograph of a young Colombian female volunteer in a sage green shirt gently stroking a happy rescued tan dog at a bright humane animal shelter courtyard, affectionate close interaction, ceramic food bowl nearby, sunlit plants in background, soft natural light, hopeful mood, cream turquoise and green palette, realistic photography, no text);
+border-radius: 28px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Aporte y resumen */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 40px 64px 60px;
+gap: 28px;
+
+width: 1440px;
+height: 1645px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Formulario de aporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 28px;
+
+width: 888px;
+height: 1545px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 20px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Importe y frecuencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 824px;
+height: 333px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 329px;
+height: 29px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frecuencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 5px;
+gap: 5px;
+
+width: 824px;
+height: 56px;
+
+background: #F4F8F7;
+border-radius: 12px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Opción */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 404.5px;
+height: 46px;
+
+border-radius: 9px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Etiqueta */
+
+width: 105px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Opción */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 404.5px;
+height: 46px;
+
+background: #167C6C;
+border-radius: 9px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* repeat */
+
+width: 17px;
+height: 17px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.7px solid #FFFFFF;
+
+
+/* Etiqueta */
+
+width: 125px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Orientación */
+
+width: 824px;
+height: 22px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 160%;
+/* o 22px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Montos sugeridos */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 824px;
+height: 74px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Monto */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px 0px;
+gap: 5px;
+
+width: 196.5px;
+height: 74px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Valor */
+
+width: 83px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Moneda */
+
+width: 56px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Monto */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px 0px;
+gap: 5px;
+
+width: 198.5px;
+height: 74px;
+
+background: #EDF6F3;
+border: 2px solid #167C6C;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Valor */
+
+width: 84px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Moneda */
+
+width: 56px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Monto */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px 0px;
+gap: 5px;
+
+width: 196.5px;
+height: 74px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 1;
+
+
+/* Valor */
+
+width: 94px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Moneda */
+
+width: 56px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Monto */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px 0px;
+gap: 5px;
+
+width: 196.5px;
+height: 74px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+flex-grow: 1;
+
+
+/* Valor */
+
+width: 97px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Moneda */
+
+width: 56px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Campo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 824px;
+height: 72px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 174px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Entrada */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 14px;
+gap: 10px;
+
+width: 824px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 796px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Separador */
+
+width: 824px;
+height: 1px;
+
+background: #DCE8E5;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Datos del donante */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 18px;
+
+width: 824px;
+height: 427px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 141px;
+height: 29px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Nombre y apellido */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 18px;
+
+width: 824px;
+height: 72px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Campo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 403px;
+height: 72px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Etiqueta */
+
+width: 68px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Entrada */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 14px;
+gap: 10px;
+
+width: 403px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 375px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Campo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 403px;
+height: 72px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Etiqueta */
+
+width: 69px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Entrada */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 14px;
+gap: 10px;
+
+width: 403px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 375px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Campo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 824px;
+height: 72px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 128px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Entrada */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 14px;
+gap: 10px;
+
+width: 824px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* mail */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 16.67%;
+bottom: 16.67%;
+
+border: 1.7px solid #167C6C;
+
+
+/* Valor */
+
+width: 768px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Identificación */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 18px;
+
+width: 824px;
+height: 72px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Campo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 403px;
+height: 72px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Etiqueta */
+
+width: 133px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Entrada */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 14px;
+gap: 10px;
+
+width: 403px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 375px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Campo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 403px;
+height: 72px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Etiqueta */
+
+width: 154px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Entrada */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 14px;
+gap: 10px;
+
+width: 403px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 375px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Campo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 824px;
+height: 72px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 122px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Entrada */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 14px;
+gap: 10px;
+
+width: 824px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 796px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Preferencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 824px;
+height: 20px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Casilla */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 18px;
+height: 18px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 4px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 796px;
+height: 20px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 155%;
+/* o 20px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Separador */
+
+width: 824px;
+height: 1px;
+
+background: #DCE8E5;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Método de pago */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 18px;
+
+width: 824px;
+height: 409px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 217px;
+height: 29px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Métodos */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 14px;
+
+width: 824px;
+height: 55px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Método */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 17px;
+gap: 12px;
+
+width: 405px;
+height: 55px;
+
+background: #EDF6F3;
+border: 1px solid #167C6C;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Selección */
+
+box-sizing: border-box;
+
+width: 17px;
+height: 17px;
+
+background: #FFFFFF;
+border: 5px solid #167C6C;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* credit-card */
+
+width: 21px;
+height: 21px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 20.83%;
+bottom: 20.83%;
+
+border: 1.7px solid #167C6C;
+
+
+/* Etiqueta */
+
+width: 48px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Método */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 17px;
+gap: 12px;
+
+width: 405px;
+height: 55px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Selección */
+
+box-sizing: border-box;
+
+width: 17px;
+height: 17px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* landmark */
+
+width: 21px;
+height: 21px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.39%;
+right: 12.39%;
+top: 8.32%;
+bottom: 8.33%;
+
+border: 1.7px solid #167C6C;
+
+
+/* Etiqueta */
+
+width: 27px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Campo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 824px;
+height: 72px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 138px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Entrada */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 14px;
+gap: 10px;
+
+width: 824px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 796px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Campo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 824px;
+height: 72px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 124px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Entrada */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 14px;
+gap: 10px;
+
+width: 824px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* credit-card */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 20.83%;
+bottom: 20.83%;
+
+border: 1.7px solid #167C6C;
+
+
+/* Valor */
+
+width: 768px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Vencimiento y código */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 18px;
+
+width: 824px;
+height: 72px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Campo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 403px;
+height: 72px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Etiqueta */
+
+width: 148px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Entrada */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 14px;
+gap: 10px;
+
+width: 403px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 375px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Campo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 403px;
+height: 72px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Etiqueta */
+
+width: 142px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Entrada */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 14px;
+gap: 10px;
+
+width: 403px;
+height: 48px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* lock-keyhole */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.7px solid #167C6C;
+
+
+/* Valor */
+
+width: 347px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Aclaración de diseño */
+
+width: 824px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 160%;
+/* o 19px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Separador */
+
+width: 824px;
+height: 1px;
+
+background: #DCE8E5;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Preferencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 824px;
+height: 20px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Casilla */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 18px;
+height: 18px;
+
+background: #167C6C;
+border: 1px solid #167C6C;
+border-radius: 4px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* check */
+
+width: 13px;
+height: 13px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 25%;
+bottom: 29.17%;
+
+border: 1.7px solid #FFFFFF;
+
+
+/* Descripción */
+
+width: 796px;
+height: 20px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 155%;
+/* o 20px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Acción */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 20px;
+gap: 9px;
+
+width: 824px;
+height: 46px;
+
+background: #167C6C;
+border: 1px solid #167C6C;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 7;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* heart-handshake */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 16.67%;
+bottom: 12.5%;
+
+border: 1.7px solid #FFFFFF;
+
+
+/* Etiqueta */
+
+width: 276px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Nota de cobro */
+
+width: 824px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 160%;
+/* o 19px */
+text-align: center;
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 8;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Resumen y confianza */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 396px;
+height: 1366px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Resumen de aporte */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 28px;
+gap: 22px;
+
+width: 396px;
+height: 541px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 20px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 217px;
+height: 29px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Estado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 7px 12px;
+gap: 6px;
+
+width: 128px;
+height: 29px;
+
+background: #DDF6EC;
+border-radius: 999px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Indicador */
+
+width: 5px;
+height: 5px;
+
+background: #167C6C;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 93px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Total */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 340px;
+height: 76px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Importe */
+
+width: 181px;
+height: 51px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 51px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frecuencia */
+
+width: 98px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Separador */
+
+width: 340px;
+height: 1px;
+
+background: #DCE8E5;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Detalle */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 17px;
+
+width: 340px;
+height: 82px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Concepto */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+
+width: 340px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 47px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 132px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Método */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+
+width: 340px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 97px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 44px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Modalidad */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+
+width: 340px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 65px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Valor */
+
+width: 54px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Aclaración */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+gap: 8px;
+
+width: 340px;
+height: 98px;
+
+background: #FFF7E8;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 176px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 308px;
+height: 42px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 165%;
+/* o 21px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Ejemplo */
+
+width: 340px;
+height: 38px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 160%;
+/* o 19px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Por qué ayudar */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 396px;
+height: 392px;
+
+background: #102825;
+border-radius: 20px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fotografía */
+
+width: 396px;
+height: 222px;
+
+background: url(High quality editorial photograph of a young silver gray tabby cat with delicate dark stripes, luminous green eyes and white chest, sitting on a pale cream cushion near a window in a welcoming rescue home, head and upper body centered, looking at camera, soft natural daylight, blurred warm beige and pale sage background, realistic detailed fur, peaceful inquisitive expression, horizontal portrait composition, no text.jpg);
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Mensaje */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 25px;
+gap: 14px;
+
+width: 396px;
+height: 170px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 346px;
+height: 60px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 23px;
+line-height: 130%;
+/* o 30px */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 346px;
+height: 46px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 165%;
+/* o 23px */
+
+color: #C2DAD4;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Contacto */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 22px;
+gap: 12px;
+
+width: 396px;
+height: 85px;
+
+background: #EDF6F3;
+border: 1px solid #DCE8E5;
+border-radius: 14px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* message-circle */
+
+width: 24px;
+height: 24px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.7px solid #167C6C;
+
+
+/* Ayuda */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 7px;
+
+width: 316px;
+height: 41px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Título */
+
+width: 230px;
+height: 18px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Correo */
+
+width: 156px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Dudas sobre cómo ayudar */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 26px;
+gap: 21px;
+
+width: 396px;
+height: 276px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 16px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 344px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pregunta */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 9px;
+
+width: 344px;
+height: 68px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pregunta */
+
+width: 344px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Respuesta */
+
+width: 344px;
+height: 42px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 165%;
+/* o 21px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Separador */
+
+width: 344px;
+height: 1px;
+
+background: #DCE8E5;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pregunta */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 9px;
+
+width: 344px;
+height: 68px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pregunta */
+
+width: 344px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Respuesta */
+
+width: 344px;
+height: 42px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 165%;
+/* o 21px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Destino de los aportes */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 60px 64px;
+gap: 30px;
+
+width: 1440px;
+height: 538px;
+
+background: #FFFFFF;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Presentación */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 14px;
+
+width: 1312px;
+height: 111px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Sección */
+
+width: 1312px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 1312px;
+height: 42px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 116%;
+/* idéntico a la altura del cuadro o 42px */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 1312px;
+height: 26px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 165%;
+/* o 26px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Áreas de cuidado */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 1312px;
+height: 189px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Destino */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 26px;
+gap: 18px;
+
+width: 421.33px;
+height: 189px;
+
+background: #EDF6F3;
+border-radius: 16px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* utensils */
+
+width: 28px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.7px solid #167C6C;
+
+
+/* Título */
+
+width: 369.33px;
+height: 25px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 25px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 369.33px;
+height: 48px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 170%;
+/* o 24px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Destino */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 26px;
+gap: 18px;
+
+width: 421.33px;
+height: 189px;
+
+background: #EDF6F3;
+border-radius: 16px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* stethoscope */
+
+width: 28px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 12.5%;
+
+border: 1.7px solid #167C6C;
+
+
+/* Título */
+
+width: 369.33px;
+height: 25px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 25px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 369.33px;
+height: 48px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 170%;
+/* o 24px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Destino */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 26px;
+gap: 18px;
+
+width: 421.33px;
+height: 189px;
+
+background: #EDF6F3;
+border-radius: 16px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 1;
+
+
+/* heart-handshake */
+
+width: 28px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 16.67%;
+bottom: 12.5%;
+
+border: 1.7px solid #167C6C;
+
+
+/* Título */
+
+width: 369.33px;
+height: 25px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 25px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 369.33px;
+height: 48px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 170%;
+/* o 24px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Transparencia */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 18px;
+gap: 12px;
+
+width: 1312px;
+height: 58px;
+
+background: #FFF7E8;
+border-radius: 12px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* file-text */
+
+width: 22px;
+height: 22px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.7px solid #167C6C;
+
+
+/* Mensaje */
+
+width: 1093px;
+height: 22px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 160%;
+/* o 22px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Acción */
+
+width: 137px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Otras formas de ayudar */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 60px 64px;
+gap: 30px;
+
+width: 1440px;
+height: 503px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Presentación */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 14px;
+
+width: 1312px;
+height: 111px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Sección */
+
+width: 1312px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 1312px;
+height: 42px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 116%;
+/* idéntico a la altura del cuadro o 42px */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 1312px;
+height: 26px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 165%;
+/* o 26px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Formas de ayudar */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 1312px;
+height: 242px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Alternativa */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 28px;
+gap: 18px;
+
+width: 421.33px;
+height: 242px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 16px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Símbolo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 44px;
+height: 44px;
+
+background: #EDF6F3;
+border-radius: 12px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* megaphone */
+
+width: 24px;
+height: 24px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 8.33%;
+
+border: 1.7px solid #167C6C;
+
+
+/* Título */
+
+width: 365.33px;
+height: 25px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 25px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 365.33px;
+height: 46px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 165%;
+/* o 23px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Acción */
+
+width: 365.33px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Alternativa */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 28px;
+gap: 18px;
+
+width: 421.33px;
+height: 242px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 16px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Símbolo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 44px;
+height: 44px;
+
+background: #EDF6F3;
+border-radius: 12px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* home */
+
+width: 24px;
+height: 24px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 8.33%;
+bottom: 12.5%;
+
+border: 1.7px solid #167C6C;
+
+
+/* Título */
+
+width: 365.33px;
+height: 25px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 25px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 365.33px;
+height: 46px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 165%;
+/* o 23px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Acción */
+
+width: 365.33px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Alternativa */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 28px;
+gap: 18px;
+
+width: 421.33px;
+height: 242px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 16px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 1;
+
+
+/* Símbolo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 44px;
+height: 44px;
+
+background: #EDF6F3;
+border-radius: 12px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* users */
+
+width: 24px;
+height: 24px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1.7px solid #167C6C;
+
+
+/* Título */
+
+width: 365.33px;
+height: 25px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 25px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Descripción */
+
+width: 365.33px;
+height: 46px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 165%;
+/* o 23px */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Acción */
+
+width: 365.33px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pie de página */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 48px 64px 28px;
+gap: 34px;
+
+width: 1440px;
+height: 265px;
+
+background: #102825;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Información */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 64px;
+
+width: 1312px;
+height: 105px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Marca */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 400px;
+height: 83px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Nombre */
+
+width: 179px;
+height: 27px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 27px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Propósito */
+
+width: 400px;
+height: 44px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 160%;
+/* o 22px */
+
+color: #BED5CE;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Explorar */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 474px;
+height: 79px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Título */
+
+width: 140px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Enlaces */
+
+width: 474px;
+height: 50px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 190%;
+/* o 25px */
+
+color: #BED5CE;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Contacto */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 310px;
+height: 105px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Título */
+
+width: 218px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Correo */
+
+width: 156px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #BED5CE;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Teléfono */
+
+width: 126px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #BED5CE;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Redes */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 56px;
+height: 20px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* instagram */
+
+width: 20px;
+height: 20px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.7px solid #BED5CE;
+
+
+/* facebook */
+
+width: 20px;
+height: 20px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 29.17%;
+right: 25%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.7px solid #BED5CE;
+
+
+/* Separador */
+
+width: 1312px;
+height: 1px;
+
+background: rgba(255, 255, 255, 0.12549);
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Legal */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+
+width: 1312px;
+height: 15px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Derechos */
+
+width: 331px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #BED5CE;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Políticas */
+
+width: 299px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #BED5CE;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;

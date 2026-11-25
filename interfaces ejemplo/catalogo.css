@@ -1,0 +1,3612 @@
+/* Adopta Huellitas - catálogo de adopción */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: relative;
+width: 1440px;
+height: 1081px;
+
+background: #FFFFFF;
+
+
+/* Navegación unificada */
+
+box-sizing: border-box;
+
+width: 1440px;
+height: 233px;
+
+background: #FFFFFF;
+border-bottom: 1px solid #DCE8E5;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Contenido de navegación */
+
+position: absolute;
+width: 1440px;
+height: 233px;
+left: 0px;
+top: 0px;
+
+
+
+/* Navigation */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 1312px;
+height: 146px;
+left: 64px;
+top: 0px;
+
+background: #FFFFFF;
+
+
+/* AdoptaCare brand */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 45px;
+gap: 10px;
+
+width: 90px;
+height: 109px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Símbolo */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 70px;
+height: 70px;
+
+background: #167C6C;
+border-radius: 50px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* heart-handshake */
+
+width: 40px;
+height: 40px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector (Stroke) */
+
+position: absolute;
+left: 7.08%;
+right: 7.08%;
+top: 15.42%;
+bottom: 11.25%;
+
+background: #FFFFFF;
+
+
+/* Brand name */
+
+width: 381px;
+height: 55.52px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+width: 26.2px;
+height: 31.73px;
+left: calc(50% - 26.2px/2 + 222.4px);
+top: calc(50% - 31.73px/2 - 1.84px);
+
+background: #17312E;
+
+
+/* Vector */
+
+position: absolute;
+width: 25.49px;
+height: 28.24px;
+left: calc(50% - 25.49px/2 + 195.3px);
+top: calc(50% - 28.24px/2 - 0.56px);
+
+background: #17312E;
+
+
+/* Vector */
+
+position: absolute;
+width: 20.55px;
+height: 41.43px;
+left: calc(50% - 20.55px/2 + 169.6px);
+top: calc(50% - 41.43px/2 - 7.05px);
+
+background: #17312E;
+
+
+/* Vector */
+
+position: absolute;
+width: 13.35px;
+height: 36.02px;
+left: calc(50% - 13.35px/2 + 151.54px);
+top: calc(50% - 36.02px/2 - 5.05px);
+
+background: #17312E;
+
+
+/* Vector */
+
+position: absolute;
+width: 15.11px;
+height: 39.61px;
+left: calc(50% - 15.11px/2 + 135.45px);
+top: calc(50% - 39.61px/2 - 5.28px);
+
+background: #17312E;
+
+
+/* Vector */
+
+position: absolute;
+width: 15.11px;
+height: 39.61px;
+left: calc(50% - 15.11px/2 + 119.53px);
+top: calc(50% - 39.61px/2 - 5.28px);
+
+background: #17312E;
+
+
+/* Vector */
+
+position: absolute;
+width: 24.89px;
+height: 27.18px;
+left: calc(50% - 24.89px/2 + 98.88px);
+top: calc(50% - 27.18px/2 + 0.98px);
+
+background: #17312E;
+
+
+/* Vector */
+
+position: absolute;
+width: 28.82px;
+height: 25.77px;
+left: calc(50% - 28.82px/2 + 70.67px);
+top: calc(50% - 25.77px/2 + 0.68px);
+
+background: #17312E;
+
+
+/* Vector */
+
+position: absolute;
+width: 29.37px;
+height: 34.66px;
+left: calc(50% - 29.37px/2 + 41.07px);
+top: calc(50% - 34.66px/2 - 3.56px);
+
+background: #17312E;
+
+
+/* Vector */
+
+position: absolute;
+width: 25.49px;
+height: 28.24px;
+left: calc(50% - 25.49px/2 - 2.99px);
+top: calc(50% - 28.24px/2 - 0.56px);
+
+background: #17312E;
+
+
+/* Vector */
+
+position: absolute;
+width: 20.55px;
+height: 41.43px;
+left: calc(50% - 20.55px/2 - 28.68px);
+top: calc(50% - 41.43px/2 - 7.05px);
+
+background: #17312E;
+
+
+/* Vector */
+
+position: absolute;
+width: 24.43px;
+height: 40.67px;
+left: calc(50% - 24.43px/2 - 52.23px);
+top: calc(50% - 40.67px/2 + 7.43px);
+
+background: #17312E;
+
+
+/* Vector */
+
+position: absolute;
+width: 24.38px;
+height: 25.61px;
+left: calc(50% - 24.38px/2 - 78.1px);
+top: calc(50% - 25.61px/2 + 1.77px);
+
+background: #17312E;
+
+
+/* Vector */
+
+position: absolute;
+width: 24.89px;
+height: 39.86px;
+left: calc(50% - 24.89px/2 - 103.84px);
+top: calc(50% - 39.86px/2 - 5.36px);
+
+background: #17312E;
+
+
+/* Vector */
+
+position: absolute;
+width: 29.72px;
+height: 34.05px;
+left: calc(50% - 29.72px/2 - 130.64px);
+top: calc(50% - 34.05px/2 - 3.71px);
+
+background: #17312E;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 1440px;
+height: 65px;
+left: 0px;
+top: 168px;
+
+
+
+/* Frame 1 */
+
+position: absolute;
+width: 1440px;
+height: 91px;
+left: 0px;
+top: 0px;
+
+background: #167C6C;
+mix-blend-mode: color;
+
+
+/* Catalog link */
+
+position: absolute;
+width: 147.37px;
+height: 33.5px;
+left: 108.57px;
+top: 30px;
+
+
+
+/* Active indicator */
+
+position: absolute;
+width: 147.37px;
+height: 4.16px;
+left: 108.57px;
+bottom: 1.5px;
+
+background: #00C8B3;
+border-radius: 2px;
+
+
+/* Catálogo de adopción */
+
+position: absolute;
+width: 125px;
+height: 15px;
+left: 114px;
+top: 30px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #000000;
+
+mix-blend-mode: color;
+opacity: 0.5;
+
+
+/* Navigation links */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px 13px;
+gap: 40px;
+
+position: absolute;
+width: 347px;
+height: 58px;
+left: 1043px;
+top: 3px;
+
+
+
+/* Acciones */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 144.76px;
+height: 42px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Botón */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 16px;
+gap: 8px;
+
+width: 144.76px;
+height: 42px;
+
+background: #167C6C;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* heart-handshake */
+
+width: 16px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector (Stroke) */
+
+position: absolute;
+left: 5.2%;
+right: 5.21%;
+top: 13.55%;
+bottom: 9.38%;
+
+background: #FFFFFF;
+
+
+/* Etiqueta */
+
+width: 88.76px;
+height: 12.65px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+width: 4.3px;
+height: 7.19px;
+left: 124.46px;
+top: 17.47px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.35px;
+height: 7.32px;
+left: 116.59px;
+top: 17.48px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.91px;
+height: 9.57px;
+left: 108.4px;
+top: 15.22px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.51px;
+height: 7.18px;
+left: 100.57px;
+top: 17.57px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 7.17px;
+height: 9.75px;
+left: 92.39px;
+top: 17.57px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.35px;
+height: 7.32px;
+left: 85.33px;
+top: 17.48px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.98px;
+height: 7.32px;
+left: 74.4px;
+top: 17.48px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 4.3px;
+height: 7.19px;
+left: 69.7px;
+top: 17.47px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.77px;
+height: 7.32px;
+left: 61.64px;
+top: 17.48px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 2.12px;
+height: 9.99px;
+left: 58.31px;
+top: 14.67px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.51px;
+height: 7.18px;
+left: 50.3px;
+top: 17.57px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 8.85px;
+height: 10.36px;
+left: 40px;
+top: 15.09px;
+
+background: #FFFFFF;
+
+
+/* Botón */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px 16px;
+gap: 8px;
+
+width: 114.7px;
+height: 42px;
+
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Etiqueta */
+
+width: 82.7px;
+height: 10.24px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.54px;
+height: 7.18px;
+left: 92.16px;
+top: 18.8px;
+
+background: #167C6C;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.98px;
+height: 10.24px;
+left: 83.9px;
+top: 15.88px;
+
+background: #167C6C;
+
+
+/* Vector */
+
+position: absolute;
+width: 2.12px;
+height: 9.99px;
+left: 80.57px;
+top: 15.99px;
+
+background: #167C6C;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.38px;
+height: 7.32px;
+left: 73.03px;
+top: 18.8px;
+
+background: #167C6C;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.77px;
+height: 7.32px;
+left: 65.29px;
+top: 18.8px;
+
+background: #167C6C;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.38px;
+height: 7.32px;
+left: 57.96px;
+top: 18.8px;
+
+background: #167C6C;
+
+
+/* Vector */
+
+position: absolute;
+width: 4.3px;
+height: 7.19px;
+left: 49.95px;
+top: 18.79px;
+
+background: #167C6C;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.35px;
+height: 7.32px;
+left: 42.07px;
+top: 18.8px;
+
+background: #167C6C;
+
+
+/* Vector */
+
+position: absolute;
+width: 2.12px;
+height: 9.99px;
+left: 38.79px;
+top: 15.99px;
+
+background: #167C6C;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.66px;
+height: 7.32px;
+left: 30.95px;
+top: 18.8px;
+
+background: #167C6C;
+
+
+/* Vector */
+
+position: absolute;
+width: 2.12px;
+height: 9.99px;
+left: 27.62px;
+top: 15.99px;
+
+background: #167C6C;
+
+
+/* Vector */
+
+position: absolute;
+width: 6.54px;
+height: 7.18px;
+left: 19.61px;
+top: 18.8px;
+
+background: #167C6C;
+
+
+/* Vector */
+
+position: absolute;
+width: 2px;
+height: 9.45px;
+left: 16px;
+top: 16.53px;
+
+background: #167C6C;
+
+
+/* Line 1 */
+
+position: absolute;
+width: 1440px;
+height: 0px;
+left: 0px;
+top: -0.12px;
+
+border: 3px solid #167C6C;
+transform: rotate(0deg);
+
+
+/* Catalog content */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 28px 64px;
+
+width: 1440px;
+height: 705px;
+
+background: #F4F8F7;
+border-bottom: 1px solid #DCE8E5;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Catalog introduction */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 1312px;
+height: 80px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Welcome copy */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 800px;
+height: 80px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Title */
+
+width: 800px;
+height: 48px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+/* idéntico a la altura del cuadro o 120% */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Supporting copy */
+
+width: 800px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* idéntico a la altura del cuadro o 160% */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Care assurance */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 16px;
+gap: 12px;
+
+width: 355px;
+height: 67px;
+
+background: #EDF6F3;
+border-radius: 12px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* heart-handshake */
+
+width: 28px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 16.67%;
+bottom: 12.5%;
+
+border: 1.8px solid #167C6C;
+
+
+/* Assurance copy */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 283px;
+height: 35px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Assurance title */
+
+width: 283px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Assurance detail */
+
+width: 174px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Filter region */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 20px 0px 24px;
+
+width: 1312px;
+height: 126px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Catalog filters */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 10px 18px;
+gap: 16px;
+
+width: 1312px;
+height: 82px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 12px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Search field */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 6px;
+
+width: 606px;
+height: 62px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Search label */
+
+width: 94px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+/* idéntico a la altura del cuadro o 133% */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Search input */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 12px;
+gap: 10px;
+
+width: 606px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* search */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1.8px solid #167C6C;
+
+
+/* Search placeholder */
+
+width: 138px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Filter field */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 6px;
+
+width: 230px;
+height: 62px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Field label */
+
+width: 46px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+/* idéntico a la altura del cuadro o 133% */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Dropdown */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px 12px;
+
+width: 230px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Selected value */
+
+width: 41px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* chevron-down */
+
+width: 16px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 37.5%;
+bottom: 37.5%;
+
+border: 1.8px solid #167C6C;
+
+
+/* Filter field */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 6px;
+
+width: 230px;
+height: 62px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Field label */
+
+width: 47px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+/* idéntico a la altura del cuadro o 133% */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Dropdown */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px 12px;
+
+width: 230px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Selected value */
+
+width: 41px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* chevron-down */
+
+width: 16px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 37.5%;
+bottom: 37.5%;
+
+border: 1.8px solid #167C6C;
+
+
+/* Reset action */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 12px;
+gap: 7px;
+
+width: 162px;
+height: 40px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* rotate-ccw */
+
+width: 16px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1.8px solid #167C6C;
+
+
+/* Reset label */
+
+width: 115px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Available pets */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 1312px;
+height: 446px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Catalog summary */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 1312px;
+height: 24px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Results count */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 9px;
+
+width: 377px;
+height: 19px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Section title */
+
+width: 215px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Pet count */
+
+width: 153px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Health assurance */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 6px;
+
+width: 176px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* shield-check */
+
+width: 16px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.32%;
+
+border: 1.8px solid #167C6C;
+
+
+/* Health note */
+
+width: 154px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Pet grid */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 1312px;
+height: 406px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pet card */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 421.33px;
+height: 406px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+box-shadow: 0px 6px 24px rgba(16, 40, 37, 0.0431373);
+border-radius: 16px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Pet portrait */
+
+width: 421.33px;
+height: 190px;
+
+background: url(High quality natural lifestyle pet portrait photograph of an adorable two year old tan and white mixed breed dog with floppy ears, soft brown eyes, black nose, sitting on grass in a rescue garden, head and upper body centered, looking directly into the camera, gentle happy expression, golden afternoon light, creamy blurred sage green foliage backdrop, realistic detailed fur, friendly trustworthy adoption editorial photography, horizontal composition, no text.jpg);
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pet details */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 18px;
+
+width: 421.33px;
+height: 216px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Name and availability */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 385.33px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pet name */
+
+width: 73px;
+height: 28px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+/* idéntico a la altura del cuadro o 117% */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Availability badge */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 10px;
+gap: 5px;
+
+width: 93px;
+height: 26px;
+
+background: #DDF6EC;
+border-radius: 100px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Status dot */
+
+width: 6px;
+height: 6px;
+
+background: #167C6C;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Status label */
+
+width: 62px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Species and age */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 0px 0px;
+gap: 7px;
+
+width: 385.33px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* dog */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 10.39%;
+right: 9.28%;
+top: 12.28%;
+bottom: 12.5%;
+
+border: 1.8px solid #667975;
+
+
+/* Age */
+
+width: 108px;
+height: 20px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+/* idéntico a la altura del cuadro o 154% */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Breed and size */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px 0px 0px;
+gap: 6px;
+
+width: 385.33px;
+height: 34px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pet trait */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 9px;
+
+width: 80px;
+height: 24px;
+
+background: #F4F8F7;
+border-radius: 5px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Trait label */
+
+width: 62px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Pet trait */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 9px;
+
+width: 67px;
+height: 24px;
+
+background: #F4F8F7;
+border-radius: 5px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Trait label */
+
+width: 49px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Microchip identification */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px 0px 0px;
+
+width: 385.33px;
+height: 36px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Microchip badge */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 8px;
+gap: 7px;
+
+width: 161px;
+height: 26px;
+
+border: 1px solid #DCE8E5;
+border-radius: 5px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* microchip */
+
+width: 14px;
+height: 14px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.8px solid #667975;
+
+
+/* Microchip ID */
+
+width: 124px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 16px;
+/* idéntico a la altura del cuadro o 145% */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Adoption action */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 14px 0px 0px;
+
+width: 385.33px;
+height: 54px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Primary action */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 20px;
+gap: 8px;
+
+width: 385.33px;
+height: 40px;
+
+background: #167C6C;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* file-text */
+
+width: 17px;
+height: 17px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.8px solid #FFFFFF;
+
+
+/* Action label */
+
+width: 122px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Pet card */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 421.33px;
+height: 406px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+box-shadow: 0px 6px 24px rgba(16, 40, 37, 0.0431373);
+border-radius: 16px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Pet portrait */
+
+width: 421.33px;
+height: 190px;
+
+background: url(High quality editorial photograph of a young silver gray tabby cat with delicate dark stripes, luminous green eyes and white chest, sitting on a pale cream cushion near a window in a welcoming rescue home, head and upper body centered, looking at camera, soft natural daylight, blurred warm beige and pale sage background, realistic detailed fur, peaceful inquisitive expression, horizontal portrait composition, no text.jpg);
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pet details */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 18px;
+
+width: 421.33px;
+height: 216px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Name and availability */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 385.33px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pet name */
+
+width: 58px;
+height: 28px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+/* idéntico a la altura del cuadro o 117% */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Availability badge */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 10px;
+gap: 5px;
+
+width: 93px;
+height: 26px;
+
+background: #DDF6EC;
+border-radius: 100px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Status dot */
+
+width: 6px;
+height: 6px;
+
+background: #167C6C;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Status label */
+
+width: 62px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Species and age */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 0px 0px;
+gap: 7px;
+
+width: 385.33px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* cat */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.46%;
+right: 12.5%;
+top: 11.74%;
+bottom: 12.5%;
+
+border: 1.8px solid #667975;
+
+
+/* Age */
+
+width: 102px;
+height: 20px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+/* idéntico a la altura del cuadro o 154% */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Breed and size */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px 0px 0px;
+gap: 6px;
+
+width: 385.33px;
+height: 34px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pet trait */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 9px;
+
+width: 187px;
+height: 24px;
+
+background: #F4F8F7;
+border-radius: 5px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Trait label */
+
+width: 169px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Pet trait */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 9px;
+
+width: 68px;
+height: 24px;
+
+background: #F4F8F7;
+border-radius: 5px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Trait label */
+
+width: 50px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Microchip identification */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px 0px 0px;
+
+width: 385.33px;
+height: 36px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Microchip badge */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 8px;
+gap: 7px;
+
+width: 161px;
+height: 26px;
+
+border: 1px solid #DCE8E5;
+border-radius: 5px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* microchip */
+
+width: 14px;
+height: 14px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.8px solid #667975;
+
+
+/* Microchip ID */
+
+width: 124px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 16px;
+/* idéntico a la altura del cuadro o 145% */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Adoption action */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 14px 0px 0px;
+
+width: 385.33px;
+height: 54px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Primary action */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 20px;
+gap: 8px;
+
+width: 385.33px;
+height: 40px;
+
+background: #167C6C;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* file-text */
+
+width: 17px;
+height: 17px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.8px solid #FFFFFF;
+
+
+/* Action label */
+
+width: 122px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Pet card */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 421.33px;
+height: 406px;
+
+background: #FFFFFF;
+border: 1px solid #DCE8E5;
+box-shadow: 0px 6px 24px rgba(16, 40, 37, 0.0431373);
+border-radius: 16px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 1;
+
+
+/* Pet portrait */
+
+width: 421.33px;
+height: 190px;
+
+background: url(High quality natural lifestyle portrait photograph of a friendly adult golden retriever dog with fluffy honey golden fur, relaxed happy face with tongue slightly out, sitting in a sunny rescue garden, head and upper body centered, looking into camera, warm natural afternoon light, beautifully blurred soft green trees and lawn background, realistic detailed fur, uplifting adoption editorial style, horizontal composition, no text.jpg);
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pet details */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 18px;
+
+width: 421.33px;
+height: 216px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Name and availability */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 385.33px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pet name */
+
+width: 50px;
+height: 28px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+/* idéntico a la altura del cuadro o 117% */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Availability badge */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 10px;
+gap: 5px;
+
+width: 93px;
+height: 26px;
+
+background: #DDF6EC;
+border-radius: 100px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Status dot */
+
+width: 6px;
+height: 6px;
+
+background: #167C6C;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Status label */
+
+width: 62px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #167C6C;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Species and age */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 0px 0px;
+gap: 7px;
+
+width: 385.33px;
+height: 28px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* dog */
+
+width: 18px;
+height: 18px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 10.39%;
+right: 9.28%;
+top: 12.28%;
+bottom: 12.5%;
+
+border: 1.8px solid #667975;
+
+
+/* Age */
+
+width: 108px;
+height: 20px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+/* idéntico a la altura del cuadro o 154% */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Breed and size */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px 0px 0px;
+gap: 6px;
+
+width: 385.33px;
+height: 34px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Pet trait */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 9px;
+
+width: 113px;
+height: 24px;
+
+background: #F4F8F7;
+border-radius: 5px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Trait label */
+
+width: 95px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Pet trait */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 9px;
+
+width: 60px;
+height: 24px;
+
+background: #F4F8F7;
+border-radius: 5px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Trait label */
+
+width: 42px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Microchip identification */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px 0px 0px;
+
+width: 385.33px;
+height: 36px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Microchip badge */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 8px;
+gap: 7px;
+
+width: 161px;
+height: 26px;
+
+border: 1px solid #DCE8E5;
+border-radius: 5px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* microchip */
+
+width: 14px;
+height: 14px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.8px solid #667975;
+
+
+/* Microchip ID */
+
+width: 124px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 16px;
+/* idéntico a la altura del cuadro o 145% */
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Adoption action */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 14px 0px 0px;
+
+width: 385.33px;
+height: 54px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Primary action */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 20px;
+gap: 8px;
+
+width: 385.33px;
+height: 40px;
+
+background: #167C6C;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* file-text */
+
+width: 17px;
+height: 17px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.8px solid #FFFFFF;
+
+
+/* Action label */
+
+width: 122px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Refuge footer */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 20px 64px;
+
+width: 1440px;
+height: 117px;
+
+background: #FFFFFF;
+border-top: 1px solid #DCE8E5;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Brand and copyright */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 9px;
+
+width: 304px;
+height: 52px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* AdoptaCare brand */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 187px;
+height: 30px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Brand mark */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 30px;
+height: 30px;
+
+background: #167C6C;
+border-radius: 10px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* paw-print */
+
+width: 20px;
+height: 20px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.36%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.34%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Brand name */
+
+width: 147px;
+height: 22px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Copyright */
+
+width: 304px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+
+color: #667975;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Refuge contact */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 9px;
+
+width: 362px;
+height: 40px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Contact heading */
+
+width: 362px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Contact details */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 322px;
+height: 15px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Email contact */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 7px;
+
+width: 165px;
+height: 15px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* mail */
+
+width: 14px;
+height: 14px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 16.67%;
+bottom: 16.67%;
+
+border: 1.8px solid #167C6C;
+
+
+/* Email address */
+
+width: 144px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Phone contact */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 7px;
+
+width: 137px;
+height: 15px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* phone */
+
+width: 14px;
+height: 14px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.8px solid #167C6C;
+
+
+/* Phone number */
+
+width: 116px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Primary action */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 20px;
+gap: 8px;
+
+width: 185px;
+height: 42px;
+
+background: #167C6C;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* message-circle */
+
+width: 17px;
+height: 17px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.8px solid #FFFFFF;
+
+
+/* Action label */
+
+width: 120px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* idéntico a la altura del cuadro */
+
+color: #FFFFFF;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Social links */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 264px;
+height: 34px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Social heading */
+
+width: 176px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idéntico a la altura del cuadro */
+
+color: #17312E;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Social link */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 34px;
+height: 34px;
+
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* instagram */
+
+width: 16px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.8px solid #167C6C;
+
+
+/* Social link */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 34px;
+height: 34px;
+
+border: 1px solid #DCE8E5;
+border-radius: 8px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* facebook */
+
+width: 16px;
+height: 16px;
+
+
+/* Dentro del diseño automático */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 29.17%;
+right: 25%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.8px solid #167C6C;

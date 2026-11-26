@@ -1,6 +1,7 @@
 from rest_framework import serializers
 
 from .models import (
+    EstadoAdopcion,
     HistorialMedico,
     MascotaRescatada,
     SeguimientoPostAdopcion,
@@ -10,6 +11,12 @@ from .models import (
 
 class MascotaRescatadaSerializer(serializers.ModelSerializer):
     imagen_display = serializers.CharField(read_only=True)
+    historial_count = serializers.IntegerField(
+        source="historial_medico.count", read_only=True
+    )
+    seguimientos_count = serializers.IntegerField(
+        source="seguimientos.count", read_only=True
+    )
 
     class Meta:
         model = MascotaRescatada
@@ -29,10 +36,26 @@ class MascotaRescatadaSerializer(serializers.ModelSerializer):
             "imagen_url",
             "imagen_display",
             "archivada",
+            "fecha_baja",
+            "historial_count",
+            "seguimientos_count",
             "creado_en",
             "actualizado_en",
         ]
         read_only_fields = ["creado_en", "actualizado_en"]
+
+    def validate(self, attrs):
+        """En Bajas solo se permite cambiar el estado; el resto queda intacto."""
+        if (
+            self.instance
+            and self.instance.estado_adopcion == EstadoAdopcion.FALLECIDO
+            and set(attrs) - {"estado_adopcion"}
+        ):
+            raise serializers.ValidationError(
+                "Una mascota en Bajas solo puede cambiar de estado; "
+                "no se pueden modificar sus datos."
+            )
+        return attrs
 
 
 class HistorialMedicoSerializer(serializers.ModelSerializer):

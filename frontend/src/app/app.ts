@@ -1,9 +1,12 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, OnInit, computed, inject, signal } from '@angular/core';
+import { Mascota } from './core/models/api.models';
+import { ApiService } from './core/services/api.service';
 
-type Species = 'Perro' | 'Gato';
+type Species = 'Perro' | 'Gato' | 'Otro';
 type SpeciesFilter = 'Todos' | Species;
 
 interface PetProfile {
+  id?: number;
   name: string;
   age: string;
   species: Species;
@@ -17,14 +20,16 @@ interface PetProfile {
   selector: 'app-root',
   templateUrl: './home.html',
 })
-export class App {
+export class App implements OnInit {
+  private readonly api = inject(ApiService);
+
   readonly menuOpen = signal(false);
   readonly searchTerm = signal('');
   readonly speciesFilter = signal<SpeciesFilter>('Todos');
   readonly favorites = signal<string[]>([]);
   readonly openFaq = signal<number | null>(0);
 
-  readonly pets: PetProfile[] = [
+  readonly pets = signal<PetProfile[]>([
     {
       name: 'Bruno',
       age: '2 años',
@@ -52,13 +57,13 @@ export class App {
       image: 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&q=85',
       imageAlt: 'Perro mestizo de orejas caídas en el parque'
     }
-  ];
+  ]);
 
   readonly filteredPets = computed(() => {
     const query = this.searchTerm().trim().toLocaleLowerCase('es');
     const species = this.speciesFilter();
 
-    return this.pets.filter((pet) => {
+    return this.pets().filter((pet) => {
       const matchesName = pet.name.toLocaleLowerCase('es').includes(query);
       const matchesSpecies = species === 'Todos' || pet.species === species;
       return matchesName && matchesSpecies;
@@ -83,6 +88,37 @@ export class App {
       answer: 'Seguimos en contacto durante los primeros dos años. Podés consultarnos sobre adaptación y cuidados, y nos alegra recibir novedades de cómo va su nueva vida.'
     }
   ];
+
+  ngOnInit(): void {
+    this.api.mascotas({ estado_adopcion: 'Disponible' }).subscribe({
+      next: (respuesta) => {
+        this.pets.set(respuesta.results.map((m) => this.mapearMascota(m)));
+      },
+      error: () => {
+        // Sin backend se conservan los perfiles de ejemplo para no romper la landing.
+      },
+    });
+  }
+
+  private mapearMascota(m: Mascota): PetProfile {
+    const meses = m.edad_aproximada_meses ?? 0;
+    const anios = Math.floor(meses / 12);
+    const resto = meses % 12;
+    const edad = anios
+      ? `${anios} ${anios === 1 ? 'año' : 'años'}${resto ? ` ${resto} mes(es)` : ''}`
+      : `${resto} mes(es)`;
+
+    return {
+      id: m.id,
+      name: m.nombre,
+      age: edad,
+      species: m.especie,
+      size: m.tamaño,
+      description: m.historia || 'Conocé más sobre este compañero escribiéndonos.',
+      image: m.imagen_display || 'assets/hero-mascotas.webp',
+      imageAlt: `${m.nombre}, ${m.especie.toLowerCase()} en adopción`,
+    };
+  }
 
   toggleMenu(): void {
     this.menuOpen.update((isOpen) => !isOpen);

@@ -21,6 +21,9 @@ export interface Mascota {
   imagen_url: string;
   imagen_display: string | null;
   archivada: boolean;
+  fecha_baja: string | null;
+  historial_count: number;
+  seguimientos_count: number;
   creado_en: string;
   actualizado_en: string;
 }
@@ -41,6 +44,9 @@ export type MascotaInput = Pick<
       | 'archivada'
     >
   >;
+
+/** En Bajas el único campo editable es el estado. */
+export type BajaInput = Pick<Mascota, 'estado_adopcion'>;
 
 export interface Solicitud {
   id: number;

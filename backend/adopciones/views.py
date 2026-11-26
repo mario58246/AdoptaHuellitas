@@ -18,7 +18,7 @@ from .serializers import (
     SeguimientoPostAdopcionSerializer,
     SolicitudAdopcionSerializer,
 )
-from .services import aprobar_solicitud, rechazar_solicitud
+from .services import aprobar_solicitud, purgar_bajas_vencidas, rechazar_solicitud
 
 
 class MascotaViewSet(viewsets.ModelViewSet):
@@ -26,6 +26,8 @@ class MascotaViewSet(viewsets.ModelViewSet):
 
     serializer_class = MascotaRescatadaSerializer
     queryset = MascotaRescatada.objects.all()
+    # No se permite borrado directo: las bajas se gestionan por estado.
+    http_method_names = ["get", "post", "put", "patch", "head", "options"]
     filterset_fields = [
         "especie",
         "tamaño",
@@ -37,17 +39,36 @@ class MascotaViewSet(viewsets.ModelViewSet):
     search_fields = ["nombre", "codigo_chip", "historia"]
     ordering_fields = ["fecha_ingreso", "edad_aproximada_meses", "nombre"]
 
+    def get_queryset(self):
+        if self.action in {"list", "bajas"}:
+            purgar_bajas_vencidas()
+        queryset = MascotaRescatada.objects.all()
+        if self.action == "list":
+            queryset = queryset.exclude(estado_adopcion=EstadoAdopcion.FALLECIDO)
+        elif self.action == "bajas":
+            queryset = queryset.filter(estado_adopcion=EstadoAdopcion.FALLECIDO)
+        elif self.action == "retrieve" and not self.request.user.is_staff:
+            queryset = queryset.exclude(estado_adopcion=EstadoAdopcion.FALLECIDO)
+        return queryset
+
     def get_permissions(self):
         if self.action in {"list", "retrieve"}:
             return []
         return [IsAdminUser()]
+
+    @action(detail=False, methods=["get"], permission_classes=[IsAdminUser])
+    def bajas(self, request):
+        """Listado exclusivo de mascotas dadas de baja (Fallecido)."""
+        return Response(self.get_serializer(self.get_queryset(), many=True).data)
 
 
 class HistorialMedicoViewSet(viewsets.ModelViewSet):
     """Ficha clínica: lectura pública, escritura exclusiva del refugio."""
 
     serializer_class = HistorialMedicoSerializer
-    queryset = HistorialMedico.objects.all()
+    queryset = HistorialMedico.objects.exclude(
+        mascota__estado_adopcion=EstadoAdopcion.FALLECIDO
+    )
     filterset_fields = ["mascota", "tipo_procedimiento"]
     ordering_fields = ["fecha_procedimiento"]
 
@@ -64,6 +85,9 @@ class SolicitudAdopcionViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         queryset = SolicitudAdopcion.objects.select_related("mascota", "adoptante")
+        queryset = queryset.exclude(
+            mascota__estado_adopcion=EstadoAdopcion.FALLECIDO
+        )
         user = self.request.user
         if not user.is_authenticated:
             return queryset.none()
@@ -100,6 +124,9 @@ class SeguimientoPostAdopcionViewSet(viewsets.ModelViewSet):
     """Portal de seguimiento: evidencia del adoptante y auditoría del refugio."""
 
     serializer_class = SeguimientoPostAdopcionSerializer
+    queryset = SeguimientoPostAdopcion.objects.exclude(
+        mascota__estado_adopcion=EstadoAdopcion.FALLECIDO
+    )
     filterset_fields = ["solicitud", "mascota", "estado", "numero_reporte"]
     ordering_fields = ["numero_reporte", "fecha_limite"]
 

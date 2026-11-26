@@ -2,6 +2,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Observable, map } from 'rxjs';
 import {
+  BajaInput,
   HistorialMedicoItem,
   Mascota,
   MascotaInput,
@@ -54,8 +55,16 @@ export class ApiService {
     return this.http.patch<Mascota>(`${API_BASE_URL}/mascotas/${id}/`, datos);
   }
 
-  eliminarMascota(id: number): Observable<void> {
-    return this.http.delete<void>(`${API_BASE_URL}/mascotas/${id}/`);
+  /** Mascotas dadas de baja; solo disponible para el refugio. */
+  bajas(): Observable<ResumenApi<Mascota>> {
+    return this.http
+      .get<Mascota[] | ResumenApi<Mascota>>(`${API_BASE_URL}/mascotas/bajas/`)
+      .pipe(map((respuesta) => this.normalizar(respuesta)));
+  }
+
+  /** Cambia únicamente el estado; se usa para dar de baja o reactivar. */
+  cambiarEstadoMascota(id: number, estado: BajaInput): Observable<Mascota> {
+    return this.http.patch<Mascota>(`${API_BASE_URL}/mascotas/${id}/`, estado);
   }
 
   solicitudes(): Observable<ResumenApi<Solicitud>> {

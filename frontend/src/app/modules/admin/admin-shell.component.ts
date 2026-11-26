@@ -60,6 +60,7 @@ export class AdminShellComponent {
   readonly enlaces: Enlace[] = [
     { ruta: '/admin', etiqueta: 'Resumen', icono: 'assets/iconos/resumen.png' },
     { ruta: '/admin/mascotas', etiqueta: 'Mascotas', icono: 'assets/iconos/mascotas.png' },
+    { ruta: '/admin/bajas', etiqueta: 'Bajas', icono: 'assets/iconos/bajas.png' },
     { ruta: '/admin/solicitudes', etiqueta: 'Solicitudes', icono: 'assets/iconos/solicitudes.png' },
     { ruta: '/admin/seguimiento', etiqueta: 'Seguimiento', icono: 'assets/iconos/seguimiento.png' },
     { ruta: '/admin/historial', etiqueta: 'Historial médico', icono: 'assets/iconos/historial.png' },

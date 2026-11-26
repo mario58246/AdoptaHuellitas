@@ -29,6 +29,14 @@ export const ADMIN_ROUTES: Routes = [
         title: 'Mascotas · Adopta Huellitas',
       },
       {
+        path: 'bajas',
+        loadComponent: () =>
+          import('./pages/bajas/bajas-admin.component').then(
+            (m) => m.BajasAdminComponent,
+          ),
+        title: 'Mascotas · Bajas · Adopta Huellitas',
+      },
+      {
         path: 'solicitudes',
         loadComponent: () =>
           import('./pages/solicitudes/solicitudes-admin.component').then(

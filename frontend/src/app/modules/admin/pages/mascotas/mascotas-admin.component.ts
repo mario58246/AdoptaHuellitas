@@ -1,6 +1,6 @@
 import { DatePipe } from '@angular/common';
 import { ChangeDetectorRef, Component, OnInit, inject } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import {
   Especie,
   EstadoAdopcion,
@@ -56,7 +56,6 @@ interface FormularioMascota {
           <option value="Disponible">Disponible</option>
           <option value="En Proceso">En Proceso</option>
           <option value="Adoptado">Adoptado</option>
-          <option value="Fallecido">Fallecido</option>
         </select>
         <span style="margin-left:auto; font-size:12px; color:#667975">{{ visibles.length }} de {{ mascotas.length }}</span>
       </div>
@@ -86,7 +85,8 @@ interface FormularioMascota {
               <td>
                 <div class="adm-acciones">
                   <button class="adm-btn ghost small" type="button" (click)="abrirEditar(m)">Editar</button>
-                  <button class="adm-btn danger small" type="button" (click)="eliminar(m)">Borrar</button>
+                  <button class="adm-btn danger small" type="button" [disabled]="cambiandoId === m.id"
+                    (click)="darDeBaja(m)">Dar de baja</button>
                 </div>
               </td>
             </tr>
@@ -99,9 +99,10 @@ interface FormularioMascota {
 
     @if (modalAbierto) {
       <div class="adm-overlay" (click)="cerrarModal()">
-        <form class="adm-modal" (click)="$event.stopPropagation()" (ngSubmit)="guardar()" #form="ngForm">
+        <form class="adm-modal" (click)="$event.stopPropagation()" (ngSubmit)="guardar(form)" #form="ngForm">
           <h3>{{ editando ? 'Editar mascota' : 'Nueva mascota' }}</h3>
-          <p class="adm-subtitle">El código de microchip es obligatorio y sigue el formato CHIP-XXXX-XXXXX.</p>
+          <p class="adm-subtitle">El microchip es obligatorio: 15 dígitos según ISO 11784/11785.</p>
+          @if (errorModal) { <div class="adm-error">{{ errorModal }}</div> }
 
           <div class="adm-form" style="margin-top:18px">
             <div class="adm-field">
@@ -109,11 +110,11 @@ interface FormularioMascota {
               <input id="nombre" name="nombre" class="adm-input" [(ngModel)]="formulario.nombre" required />
             </div>
             <div class="adm-field">
-              <label for="chip">Código de microchip *</label>
-              <input id="chip" name="chip" class="adm-input" placeholder="CHIP-1234-56789"
-                [(ngModel)]="formulario.codigo_chip" required />
+              <label for="chip">Microchip (15 dígitos) *</label>
+              <input id="chip" name="chip" class="adm-input" inputmode="numeric" maxlength="15"
+                placeholder="981000123456789" [(ngModel)]="formulario.codigo_chip" required />
               @if (formulario.codigo_chip && !chipValido) {
-                <span style="color:#C64B52; font-size:11px">Formato inválido. Ejemplo: CHIP-1234-56789</span>
+                <span style="color:#C64B52; font-size:11px">Debe tener exactamente 15 dígitos. Ejemplo: 981000123456789</span>
               }
             </div>
             <div class="adm-field">
@@ -149,7 +150,7 @@ interface FormularioMascota {
               <label for="estado">Estado de adopción</label>
               <select id="estado" name="estado" class="adm-select" [(ngModel)]="formulario.estado_adopcion">
                 <option value="Disponible">Disponible</option><option value="En Proceso">En Proceso</option>
-                <option value="Adoptado">Adoptado</option><option value="Fallecido">Fallecido</option>
+                <option value="Adoptado">Adoptado</option>
               </select>
             </div>
             <div class="adm-field">
@@ -172,7 +173,7 @@ interface FormularioMascota {
 
           <div class="adm-modal-foot">
             <button class="adm-btn ghost" type="button" (click)="cerrarModal()">Cancelar</button>
-            <button class="adm-btn primary" type="submit" [disabled]="form.invalid || !chipValido || guardando">
+            <button class="adm-btn primary" type="submit" [disabled]="guardando">
               {{ guardando ? 'Guardando…' : 'Guardar' }}
             </button>
           </div>
@@ -192,9 +193,11 @@ export class MascotasAdminComponent implements OnInit {
   filtroEspecie = '';
   filtroEstado = '';
   error = '';
+  errorModal = '';
   mensaje = '';
   modalAbierto = false;
   guardando = false;
+  cambiandoId: number | null = null;
   editando: number | null = null;
 
   formulario: FormularioMascota = this.formularioVacio();
@@ -204,7 +207,7 @@ export class MascotasAdminComponent implements OnInit {
   }
 
   get chipValido(): boolean {
-    return /^CHIP-\d{4}-\d{5}$/.test(this.formulario.codigo_chip ?? '');
+    return /^\d{15}$/.test(this.formulario.codigo_chip ?? '');
   }
 
   cargar(): void {
@@ -238,6 +241,7 @@ export class MascotasAdminComponent implements OnInit {
     this.editando = null;
     this.formulario = this.formularioVacio();
     this.mensaje = '';
+    this.errorModal = '';
     this.modalAbierto = true;
   }
 
@@ -258,6 +262,7 @@ export class MascotasAdminComponent implements OnInit {
       archivada: m.archivada,
     };
     this.mensaje = '';
+    this.errorModal = '';
     this.modalAbierto = true;
   }
 
@@ -265,10 +270,19 @@ export class MascotasAdminComponent implements OnInit {
     this.modalAbierto = false;
   }
 
-  guardar(): void {
-    if (!this.chipValido) {
+  guardar(form: NgForm): void {
+    this.errorModal = '';
+    if (form.invalid) {
+      this.errorModal = 'Completá los campos obligatorios (nombre, microchip, especie, edad y tamaño).';
+      this.cdr.markForCheck();
       return;
     }
+    if (!this.chipValido) {
+      this.errorModal = 'El microchip debe tener exactamente 15 dígitos. Ejemplo: 981000123456789.';
+      this.cdr.markForCheck();
+      return;
+    }
+
     this.guardando = true;
     this.error = '';
     const { tamano, ...resto } = this.formulario;
@@ -291,24 +305,31 @@ export class MascotasAdminComponent implements OnInit {
       },
       error: (fallo) => {
         this.guardando = false;
-        this.error = this.mensajeError(fallo?.error, 'No se pudo guardar la mascota.');
+        this.errorModal = this.mensajeError(
+          fallo?.error,
+          'No se pudo guardar. Verificá que el backend esté encendido en http://127.0.0.1:8000.',
+        );
+        this.error = this.errorModal;
         this.cdr.markForCheck();
       },
     });
   }
 
-  eliminar(m: Mascota): void {
-    if (!confirm(`¿Eliminar a ${m.nombre}? Esta acción no se puede deshacer.`)) {
+  darDeBaja(m: Mascota): void {
+    if (!confirm(`¿Dar de baja a ${m.nombre}? Pasará a la sección Bajas; su historial se conserva.`)) {
       return;
     }
-    this.api.eliminarMascota(m.id).subscribe({
+    this.cambiandoId = m.id;
+    this.api.cambiarEstadoMascota(m.id, { estado_adopcion: 'Fallecido' }).subscribe({
       next: () => {
-        this.mensaje = `${m.nombre} fue eliminada.`;
+        this.cambiandoId = null;
+        this.mensaje = `${m.nombre} pasó a Bajas. Su historial y seguimiento se conservan.`;
         this.cargar();
         this.cdr.markForCheck();
       },
-      error: () => {
-        this.error = 'No se pudo eliminar la mascota.';
+      error: (fallo) => {
+        this.cambiandoId = null;
+        this.error = this.mensajeError(fallo?.error, 'No se pudo dar de baja la mascota.');
         this.cdr.markForCheck();
       },
     });

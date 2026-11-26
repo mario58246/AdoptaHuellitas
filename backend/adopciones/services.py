@@ -11,9 +11,15 @@ from calendar import monthrange
 from django.db import transaction
 from django.utils import timezone
 
-from .models import EstadoAdopcion, SeguimientoPostAdopcion, SolicitudAdopcion
+from .models import (
+    EstadoAdopcion,
+    MascotaRescatada,
+    SeguimientoPostAdopcion,
+    SolicitudAdopcion,
+)
 
 MESES_REPORTES = list(range(1, 13)) + [16, 20, 24]
+ANIOS_CONSERVACION_BAJA = 5
 
 
 def sumar_meses(fecha, meses):
@@ -84,3 +90,27 @@ def rechazar_solicitud(solicitud, observaciones=""):
         mascota.estado_adopcion = EstadoAdopcion.DISPONIBLE
         mascota.save(update_fields=["estado_adopcion", "actualizado_en"])
     return solicitud
+
+
+def restar_anios(fecha, anios):
+    """Resta años calendario; 29 de febrero se ajusta al 28."""
+    try:
+        return fecha.replace(year=fecha.year - anios)
+    except ValueError:
+        return fecha.replace(year=fecha.year - anios, day=28)
+
+
+def purgar_bajas_vencidas():
+    """Elimina mascotas dadas de baja hace 5 años o más, con todo su historial.
+
+    Las relaciones usan CASCADE, por eso se van también solicitudes,
+    reportes de seguimiento y registros médicos. Devuelve cuántas se borraron.
+    """
+    limite = restar_anios(timezone.localdate(), ANIOS_CONSERVACION_BAJA)
+    vencidas = MascotaRescatada.objects.filter(
+        estado_adopcion=EstadoAdopcion.FALLECIDO,
+        fecha_baja__lte=limite,
+    )
+    cantidad = vencidas.count()
+    vencidas.delete()
+    return cantidad

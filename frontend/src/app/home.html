@@ -89,7 +89,7 @@
     </div>
 
     <div class="pet-grid">
-      @for (pet of filteredPets(); track pet.name) {
+      @for (pet of filteredPets(); track pet.id ?? pet.name) {
         <article class="pet-card">
           <div class="pet-image-wrap">
             <img [src]="pet.image" [alt]="pet.imageAlt" loading="lazy" />

@@ -1,4 +1,5 @@
 from datetime import date, timedelta
+from unittest.mock import MagicMock, patch
 
 from django.contrib.auth import get_user_model
 from django.core.exceptions import ValidationError
@@ -6,6 +7,7 @@ from django.test import TestCase
 from django.utils import timezone
 from rest_framework.test import APIClient
 
+from .imagenes import validar_url_imagen
 from .models import (
     EstadoAdopcion,
     HistorialMedico,
@@ -234,3 +236,19 @@ class BajasTests(TestCase):
         self.assertEqual(purgar_bajas_vencidas(), 1)
         self.assertFalse(MascotaRescatada.objects.filter(pk=self.mascota.pk).exists())
         self.assertFalse(HistorialMedico.objects.exists())
+
+
+class UrlImagenTests(TestCase):
+    def test_acepta_url_directa_de_imagen(self):
+        url = "https://img.magnific.com/vector-gratis/vaca_96037-417.jpg"
+        self.assertEqual(validar_url_imagen(url), url)
+
+    def test_rechaza_url_de_pagina_web(self):
+        respuesta = MagicMock()
+        respuesta.__enter__.return_value.headers.get_content_type.return_value = "text/html"
+        with patch("adopciones.imagenes.urlopen", return_value=respuesta):
+            with self.assertRaises(ValidationError) as error:
+                validar_url_imagen(
+                    "https://www.magnific.com/es/fotos-vectores-gratis/vaca-animada"
+                )
+        self.assertIn("página web", str(error.exception))

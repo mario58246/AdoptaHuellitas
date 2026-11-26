@@ -158,9 +158,10 @@ interface FormularioMascota {
               <input id="ingreso" name="ingreso" class="adm-input" type="date" [(ngModel)]="formulario.fecha_ingreso" />
             </div>
             <div class="adm-field completo">
-              <label for="url">URL de imagen externa (Drive / Cloudinary)</label>
-              <input id="url" name="url" class="adm-input" type="url" placeholder="https://…"
+              <label for="url">URL directa de la imagen (.jpg, .png, .webp…)</label>
+              <input id="url" name="url" class="adm-input" type="url" placeholder="https://…/vaca.jpg"
                 [(ngModel)]="formulario.imagen_url" />
+              <span style="color:#667975; font-size:11px">No pegues la URL de una página: copiá la dirección de la imagen.</span>
             </div>
             <div class="adm-field completo">
               <label for="archivo">O subir una foto desde tu equipo</label>

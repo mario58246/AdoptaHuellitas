@@ -132,6 +132,7 @@ Panel en **`http://localhost:4200/admin`**. La landing pública sigue en `http:/
 - La landing pública toma las mascotas `Disponible` desde la API y muestra **máximo 20 fichas**; si hay más, invita a ingresar para ver el catálogo completo.
 - Si una mascota no tiene imagen cargada, se usan los vectores grises semitransparentes de `frontend/public/assets/mascotas/` según su especie. La imagen del hero solo se usa en “Un hogar cambia una vida”.
 - En el alta/edición de mascotas se puede subir una foto real desde el equipo o usar una URL externa. El archivo se envía como `multipart/form-data` y se sirve desde `/media/`; la API devuelve la URL absoluta para que la imagen aparezca en el panel y en la landing. En producción, Cloudinary reemplaza al almacenamiento local.
+- La URL externa debe ser **directa a la imagen** (`.jpg`, `.png`, `.webp`, Cloudinary, Drive, etc.). El backend rechaza URLs de páginas web con un mensaje claro; en la landing, si una imagen externa falla, se usa el vector gris de la especie.
 - `http://localhost:4200/ingresar` muestra las opciones de adoptante (pendiente del módulo de Mario) y administrador (redirige al login del panel).
 - La barra lateral muestra los iconos y sus etiquetas; el login permite mostrar u ocultar la contraseña.
 - La URL de la API está en `frontend/src/app/core/services/api.service.ts` (`API_BASE_URL`); cámbiala por la de Render al desplegar.

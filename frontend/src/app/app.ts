@@ -14,6 +14,7 @@ interface PetProfile {
   size: string;
   description: string;
   image: string;
+  fallback: string;
   imageAlt: string;
 }
 
@@ -41,6 +42,7 @@ export class App implements OnInit {
       size: 'Mediano',
       description: 'Un compañero alegre que disfruta los paseos y las buenas siestas.',
       image: 'https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=85',
+      fallback: 'assets/mascotas/mascota-generica-1.png',
       imageAlt: 'Perro color miel sentado en un jardín'
     },
     {
@@ -50,6 +52,7 @@ export class App implements OnInit {
       size: 'Pequeña',
       description: 'Curiosa, dulce y experta en encontrar el rincón más soleado de la casa.',
       image: 'https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=900&q=85',
+      fallback: 'assets/mascotas/gato-generico.png',
       imageAlt: 'Gata atigrada mirando a cámara'
     },
     {
@@ -59,6 +62,7 @@ export class App implements OnInit {
       size: 'Mediana',
       description: 'Serena y compañera, espera una familia para compartir sus caminatas.',
       image: 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&q=85',
+      fallback: 'assets/mascotas/mascota-generica-1.png',
       imageAlt: 'Perro mestizo de orejas caídas en el parque'
     }
   ]);
@@ -109,6 +113,7 @@ export class App implements OnInit {
 
   private mapearMascota(m: Mascota): PetProfile {
     const meses = m.edad_aproximada_meses ?? 0;
+    const generica = this.imagenGenerica(m.especie);
     const anios = Math.floor(meses / 12);
     const resto = meses % 12;
     const edad = anios
@@ -122,7 +127,8 @@ export class App implements OnInit {
       species: m.especie,
       size: m.tamaño,
       description: m.historia || 'Conocé más sobre este compañero escribiéndonos.',
-      image: m.imagen_display || this.imagenGenerica(m.especie),
+      image: m.imagen_display || generica,
+      fallback: generica,
       imageAlt: `${m.nombre}, ${m.especie.toLowerCase()} en adopción`,
     };
   }
@@ -134,6 +140,13 @@ export class App implements OnInit {
       Otro: 'assets/mascotas/mascota-generica-2.png',
     };
     return imagenes[especie] ?? imagenes.Otro;
+  }
+
+  usarFallback(pet: PetProfile): void {
+    if (pet.image === pet.fallback) return;
+    this.pets.update((lista) =>
+      lista.map((item) => (item === pet ? { ...item, image: item.fallback } : item)),
+    );
   }
 
   toggleMenu(): void {

@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from rest_framework.request import Request
 
+from .imagenes import validar_url_imagen
 from .models import (
     EstadoAdopcion,
     HistorialMedico,
@@ -56,6 +57,10 @@ class MascotaRescatadaSerializer(serializers.ModelSerializer):
                 return request.build_absolute_uri(imagen)
             return f"http://127.0.0.1:8000{imagen}"
         return imagen
+
+    def validate_imagen_url(self, valor):
+        """Evita guardar páginas web como si fueran fotos."""
+        return validar_url_imagen(valor)
 
     def validate(self, attrs):
         """En Bajas solo se permite cambiar el estado; el resto queda intacto."""

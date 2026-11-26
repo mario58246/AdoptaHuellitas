@@ -92,7 +92,7 @@
       @for (pet of filteredPets(); track pet.id ?? pet.name) {
         <article class="pet-card">
           <div class="pet-image-wrap">
-            <img [src]="pet.image" [alt]="pet.imageAlt" loading="lazy" />
+            <img [src]="pet.image" [alt]="pet.imageAlt" loading="lazy" (error)="usarFallback(pet)" />
             <span class="availability"><span></span> Disponible</span>
             <button type="button" class="favorite-button" [attr.aria-label]="'Guardar a ' + pet.name" (click)="toggleFavorite(pet.name)" [class.is-favorite]="favorites().includes(pet.name)">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.8c0 4.5-8.8 10-8.8 10s-8.8-5.5-8.8-10a4.8 4.8 0 0 1 8.8-2.7 4.8 4.8 0 0 1 8.8 2.7Z"/></svg>

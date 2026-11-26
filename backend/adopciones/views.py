@@ -100,6 +100,8 @@ class SeguimientoPostAdopcionViewSet(viewsets.ModelViewSet):
     """Portal de seguimiento: evidencia del adoptante y auditoría del refugio."""
 
     serializer_class = SeguimientoPostAdopcionSerializer
+    filterset_fields = ["solicitud", "mascota", "estado", "numero_reporte"]
+    ordering_fields = ["numero_reporte", "fecha_limite"]
 
     def get_queryset(self):
         queryset = SeguimientoPostAdopcion.objects.select_related(

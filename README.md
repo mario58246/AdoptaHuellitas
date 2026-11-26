@@ -117,6 +117,26 @@ git push -u origin feature/admin-crud-mascotas
 - **Angie (Administrador):** CRUD de mascotas, bandeja de solicitudes, auditoría/semáforo de seguimiento e historial médico.
 - **Mario (Visitante + Adoptante):** landing, catálogo, autenticación JWT, formulario de postulación y portal del adoptante.
 
+## Módulo administrador (Angie)
+
+Panel en **`http://localhost:4200/admin`**. La landing pública sigue en `http://localhost:4200/`.
+
+- Ingresá con el superusuario creado en local (`admin`) y su contraseña.
+- Si no tenés superusuario: `cd backend && python manage.py createsuperuser`.
+- El token JWT se guarda en `localStorage` (`adopta_sesion`) y se envía automáticamente en cada petición.
+- Pantallas: Resumen, Mascotas (CRUD + validación de microchip), Solicitudes (aprobar/rechazar), Seguimiento (matriz de 15 reportes y semáforo) e Historial médico.
+- La URL de la API está en `frontend/src/app/core/services/api.service.ts` (`API_BASE_URL`); cámbiala por la de Render al desplegar.
+
+Estructura del frontend:
+
+```text
+frontend/src/app/
+├── core/          # modelos, ApiService, AuthService, interceptor y guard
+├── modules/admin/ # shell, rutas, estilos y páginas del panel
+├── app.ts         # landing pública de Mario (sin cambios)
+└── app-shell.ts   # raíz con <router-outlet>
+```
+
 ## Referencias de diseño
 
 - `interfaces ejemplo/`: CSS exportado de los wireframes (panel administrativo, seguimiento con semáforo, catálogo, etc.).

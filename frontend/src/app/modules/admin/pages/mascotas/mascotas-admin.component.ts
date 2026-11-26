@@ -163,6 +163,16 @@ interface FormularioMascota {
                 [(ngModel)]="formulario.imagen_url" />
             </div>
             <div class="adm-field completo">
+              <label for="archivo">O subir una foto desde tu equipo</label>
+              <input id="archivo" name="archivo" class="adm-input" type="file" accept="image/*"
+                (change)="seleccionarImagen($event)" />
+              @if (vistaPrevia) {
+                <img class="adm-thumb" style="max-width:140px; margin-top:8px"
+                  [src]="vistaPrevia" alt="Vista previa de la mascota" />
+              }
+              <span style="color:#667975; font-size:11px">Si subís un archivo, tiene prioridad sobre la URL.</span>
+            </div>
+            <div class="adm-field completo">
               <label for="historia">Historia</label>
               <textarea id="historia" name="historia" class="adm-textarea" [(ngModel)]="formulario.historia"></textarea>
             </div>
@@ -199,6 +209,8 @@ export class MascotasAdminComponent implements OnInit {
   guardando = false;
   cambiandoId: number | null = null;
   editando: number | null = null;
+  archivoImagen: File | null = null;
+  vistaPrevia = '';
 
   formulario: FormularioMascota = this.formularioVacio();
 
@@ -242,6 +254,7 @@ export class MascotasAdminComponent implements OnInit {
     this.formulario = this.formularioVacio();
     this.mensaje = '';
     this.errorModal = '';
+    this.limpiarImagen();
     this.modalAbierto = true;
   }
 
@@ -263,11 +276,31 @@ export class MascotasAdminComponent implements OnInit {
     };
     this.mensaje = '';
     this.errorModal = '';
+    this.limpiarImagen();
+    this.vistaPrevia = m.imagen_display || '';
     this.modalAbierto = true;
   }
 
   cerrarModal(): void {
     this.modalAbierto = false;
+    this.limpiarImagen();
+  }
+
+  seleccionarImagen(event: Event): void {
+    const entrada = event.target as HTMLInputElement;
+    const archivo = entrada.files?.[0] ?? null;
+    this.limpiarImagen();
+    this.archivoImagen = archivo;
+    this.vistaPrevia = archivo ? URL.createObjectURL(archivo) : '';
+    this.cdr.markForCheck();
+  }
+
+  private limpiarImagen(): void {
+    if (this.vistaPrevia.startsWith('blob:')) {
+      URL.revokeObjectURL(this.vistaPrevia);
+    }
+    this.archivoImagen = null;
+    this.vistaPrevia = '';
   }
 
   guardar(form: NgForm): void {
@@ -292,13 +325,14 @@ export class MascotasAdminComponent implements OnInit {
       edad_aproximada_meses: Number(this.formulario.edad_aproximada_meses),
     };
     const peticion = this.editando
-      ? this.api.editarMascota(this.editando, datos)
-      : this.api.crearMascota(datos);
+      ? this.api.editarMascota(this.editando, datos, this.archivoImagen)
+      : this.api.crearMascota(datos, this.archivoImagen);
 
     peticion.subscribe({
       next: () => {
         this.guardando = false;
         this.modalAbierto = false;
+        this.limpiarImagen();
         this.mensaje = this.editando ? 'Mascota actualizada correctamente.' : 'Mascota registrada correctamente.';
         this.cargar();
         this.cdr.markForCheck();

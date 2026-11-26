@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from rest_framework.request import Request
 
 from .models import (
     EstadoAdopcion,
@@ -10,7 +11,7 @@ from .models import (
 
 
 class MascotaRescatadaSerializer(serializers.ModelSerializer):
-    imagen_display = serializers.CharField(read_only=True)
+    imagen_display = serializers.SerializerMethodField()
     historial_count = serializers.IntegerField(
         source="historial_medico.count", read_only=True
     )
@@ -43,6 +44,18 @@ class MascotaRescatadaSerializer(serializers.ModelSerializer):
             "actualizado_en",
         ]
         read_only_fields = ["creado_en", "actualizado_en"]
+
+    def get_imagen_display(self, obj):
+        """Devuelve una URL absoluta para que el frontend pueda mostrar la foto."""
+        imagen = obj.imagen_display
+        if not imagen:
+            return None
+        if imagen.startswith("/"):
+            request = self.context.get("request")
+            if isinstance(request, Request):
+                return request.build_absolute_uri(imagen)
+            return f"http://127.0.0.1:8000{imagen}"
+        return imagen
 
     def validate(self, attrs):
         """En Bajas solo se permite cambiar el estado; el resto queda intacto."""

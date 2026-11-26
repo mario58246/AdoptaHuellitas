@@ -47,12 +47,32 @@ export class ApiService {
     return this.http.get<Mascota>(`${API_BASE_URL}/mascotas/${id}/`);
   }
 
-  crearMascota(datos: MascotaInput): Observable<Mascota> {
-    return this.http.post<Mascota>(`${API_BASE_URL}/mascotas/`, datos);
+  crearMascota(datos: MascotaInput, imagen?: File | null): Observable<Mascota> {
+    return this.http.post<Mascota>(
+      `${API_BASE_URL}/mascotas/`,
+      this.formDataMascota(datos, imagen),
+    );
   }
 
-  editarMascota(id: number, datos: MascotaInput): Observable<Mascota> {
-    return this.http.patch<Mascota>(`${API_BASE_URL}/mascotas/${id}/`, datos);
+  editarMascota(id: number, datos: MascotaInput, imagen?: File | null): Observable<Mascota> {
+    return this.http.patch<Mascota>(
+      `${API_BASE_URL}/mascotas/${id}/`,
+      this.formDataMascota(datos, imagen),
+    );
+  }
+
+  /** DRF acepta el archivo `imagen` cuando la petición va como multipart/form-data. */
+  private formDataMascota(datos: MascotaInput, imagen?: File | null): FormData {
+    const cuerpo = new FormData();
+    Object.entries(datos).forEach(([clave, valor]) => {
+      if (valor !== undefined && valor !== null) {
+        cuerpo.append(clave, String(valor));
+      }
+    });
+    if (imagen) {
+      cuerpo.append('imagen', imagen, imagen.name);
+    }
+    return cuerpo;
   }
 
   /** Mascotas dadas de baja; solo disponible para el refugio. */

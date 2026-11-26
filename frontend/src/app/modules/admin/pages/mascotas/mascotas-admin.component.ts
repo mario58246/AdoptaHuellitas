@@ -9,7 +9,7 @@ import {
   Tamano,
 } from '../../../../core/models/api.models';
 import { ApiService } from '../../../../core/services/api.service';
-import { adminStyles } from '../../admin.styles';
+import { adminConfirmStyles, adminStyles } from '../../admin.styles';
 
 interface FormularioMascota {
   nombre: string;
@@ -191,8 +191,25 @@ interface FormularioMascota {
         </form>
       </div>
     }
+
+    @if (accionPendiente) {
+      <div class="adm-overlay" (click)="cerrarConfirmacion()">
+        <div class="adm-modal adm-confirm" role="dialog" aria-modal="true"
+          (click)="$event.stopPropagation()">
+          <div class="adm-confirm-icon" aria-hidden="true">!</div>
+          <h3>{{ confirmTitulo }}</h3>
+          <p>{{ confirmMensaje }}</p>
+          <div class="adm-modal-foot">
+            <button class="adm-btn ghost" type="button" (click)="cerrarConfirmacion()">Cancelar</button>
+            <button class="adm-btn danger" type="button" (click)="confirmarAccion()">
+              {{ confirmBoton }}
+            </button>
+          </div>
+        </div>
+      </div>
+    }
   `,
-  styles: [adminStyles],
+  styles: [adminStyles, adminConfirmStyles],
 })
 export class MascotasAdminComponent implements OnInit {
   private readonly api = inject(ApiService);
@@ -212,6 +229,11 @@ export class MascotasAdminComponent implements OnInit {
   editando: number | null = null;
   archivoImagen: File | null = null;
   vistaPrevia = '';
+
+  accionPendiente: (() => void) | null = null;
+  confirmTitulo = '';
+  confirmMensaje = '';
+  confirmBoton = 'Confirmar';
 
   formulario: FormularioMascota = this.formularioVacio();
 
@@ -351,9 +373,39 @@ export class MascotasAdminComponent implements OnInit {
   }
 
   darDeBaja(m: Mascota): void {
-    if (!confirm(`¿Dar de baja a ${m.nombre}? Pasará a la sección Bajas; su historial se conserva.`)) {
-      return;
-    }
+    this.abrirConfirmacion(
+      `Dar de baja a ${m.nombre}`,
+      'Pasará a la sección Bajas. Su historial médico y seguimiento se conservan.',
+      'Dar de baja',
+      () => this.ejecutarBaja(m),
+    );
+  }
+
+  abrirConfirmacion(
+    titulo: string,
+    mensaje: string,
+    boton: string,
+    accion: () => void,
+  ): void {
+    this.confirmTitulo = titulo;
+    this.confirmMensaje = mensaje;
+    this.confirmBoton = boton;
+    this.accionPendiente = accion;
+    this.cdr.markForCheck();
+  }
+
+  cerrarConfirmacion(): void {
+    this.accionPendiente = null;
+    this.cdr.markForCheck();
+  }
+
+  confirmarAccion(): void {
+    const accion = this.accionPendiente;
+    this.accionPendiente = null;
+    accion?.();
+  }
+
+  private ejecutarBaja(m: Mascota): void {
     this.cambiandoId = m.id;
     this.api.cambiarEstadoMascota(m.id, { estado_adopcion: 'Fallecido' }).subscribe({
       next: () => {

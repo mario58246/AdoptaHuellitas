@@ -139,3 +139,13 @@ export const adminStyles = `
   .adm-content { padding:16px; }
 }
 `;
+
+/** Modal de confirmación propia, para reemplazar los avisos nativos del navegador. */
+export const adminConfirmStyles = `
+.adm-confirm { width:min(430px,100%); text-align:center; padding:30px; }
+.adm-confirm-icon { width:52px; height:52px; margin:0 auto 14px; border-radius:50%;
+  background:#FFF1D6; color:#B7791F; display:grid; place-items:center; font-size:24px; }
+.adm-confirm h3 { margin:0 0 10px; font-size:19px; }
+.adm-confirm p { margin:0; color:#667975; font-size:13px; line-height:1.6; }
+.adm-confirm .adm-modal-foot { justify-content:center; margin-top:24px; }
+`;

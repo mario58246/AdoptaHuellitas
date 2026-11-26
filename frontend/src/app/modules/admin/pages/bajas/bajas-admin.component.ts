@@ -3,7 +3,7 @@ import { ChangeDetectorRef, Component, OnInit, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { EstadoAdopcion, Mascota } from '../../../../core/models/api.models';
 import { ApiService } from '../../../../core/services/api.service';
-import { adminStyles } from '../../admin.styles';
+import { adminConfirmStyles, adminStyles } from '../../admin.styles';
 
 @Component({
   selector: 'app-bajas-admin',
@@ -12,17 +12,13 @@ import { adminStyles } from '../../admin.styles';
     <div class="adm-page-head">
       <div>
         <h1 class="adm-title">Mascotas · Bajas</h1>
-        <p class="adm-subtitle">
-          Animales con estado <strong>Fallecido</strong>. Solo se puede cambiar su estado;
-          nombre, microchip y demás datos quedan intactos.
-        </p>
+        <p class="adm-subtitle">Animales con estado <strong>Fallecido</strong>.</p>
       </div>
       <a class="adm-btn ghost" routerLink="/admin/mascotas">← Volver a mascotas</a>
     </div>
 
     <div class="adm-aviso">
-      Su historial médico y seguimiento se conservan, pero dejan de mostrarse en las demás
-      secciones. A los 5 años de la baja se eliminan automáticamente junto con todo su historial.
+      A los 5 años en estado Fallecido se eliminan todos los datos relacionados con el animal.
     </div>
 
     @if (error) { <div class="adm-error">{{ error }}</div> }
@@ -46,12 +42,11 @@ import { adminStyles } from '../../admin.styles';
               <td>{{ m.historial_count }} registro(s)</td>
               <td>{{ m.seguimientos_count }} reporte(s)</td>
               <td>
-                <select class="adm-select" [disabled]="cambiandoId === m.id"
-                  [value]="m.estado_adopcion" (change)="cambiarEstado(m, $any($event.target).value)">
-                  <option value="Disponible">Disponible</option>
-                  <option value="En Proceso">En Proceso</option>
-                  <option value="Adoptado">Adoptado</option>
-                </select>
+                <div class="adm-acciones">
+                  <span class="adm-badge rojo">Fallecido</span>
+                  <button class="adm-btn primary small" type="button" [disabled]="cambiandoId === m.id"
+                    (click)="pedirReestablecer(m)">Reestablecer</button>
+                </div>
               </td>
             </tr>
           } @empty {
@@ -60,8 +55,25 @@ import { adminStyles } from '../../admin.styles';
         </tbody>
       </table>
     </div>
+
+    @if (pendiente) {
+      <div class="adm-overlay" (click)="cerrarConfirmacion()">
+        <div class="adm-modal adm-confirm" role="dialog" aria-modal="true"
+          (click)="$event.stopPropagation()">
+          <div class="adm-confirm-icon" aria-hidden="true">↺</div>
+          <h3>Reestablecer a {{ pendiente.nombre }}</h3>
+          <p>Volverá a Mascotas con estado <strong>Disponible</strong>. Su historial y reportes se conservan.</p>
+          <div class="adm-modal-foot">
+            <button class="adm-btn ghost" type="button" (click)="cerrarConfirmacion()">Cancelar</button>
+            <button class="adm-btn primary" type="button" (click)="confirmarReestablecer()">
+              Reestablecer
+            </button>
+          </div>
+        </div>
+      </div>
+    }
   `,
-  styles: [adminStyles],
+  styles: [adminStyles, adminConfirmStyles],
 })
 export class BajasAdminComponent implements OnInit {
   private readonly api = inject(ApiService);
@@ -71,6 +83,7 @@ export class BajasAdminComponent implements OnInit {
   error = '';
   mensaje = '';
   cambiandoId: number | null = null;
+  pendiente: Mascota | null = null;
 
   ngOnInit(): void {
     this.cargar();
@@ -89,23 +102,33 @@ export class BajasAdminComponent implements OnInit {
     });
   }
 
-  cambiarEstado(m: Mascota, estado: string): void {
-    if (!estado || estado === 'Fallecido') {
-      return;
-    }
-    if (!confirm(`¿Cambiar el estado de ${m.nombre} a «${estado}»?`)) {
-      this.cargar();
-      return;
-    }
+  pedirReestablecer(m: Mascota): void {
+    this.pendiente = m;
+    this.cdr.markForCheck();
+  }
 
+  cerrarConfirmacion(): void {
+    this.pendiente = null;
+    this.cdr.markForCheck();
+  }
+
+  confirmarReestablecer(): void {
+    const mascota = this.pendiente;
+    this.pendiente = null;
+    if (mascota) {
+      this.ejecutarCambio(mascota);
+    }
+  }
+
+  private ejecutarCambio(m: Mascota): void {
     this.cambiandoId = m.id;
     this.error = '';
     this.api
-      .cambiarEstadoMascota(m.id, { estado_adopcion: estado as EstadoAdopcion })
+      .cambiarEstadoMascota(m.id, { estado_adopcion: 'Disponible' as EstadoAdopcion })
       .subscribe({
         next: () => {
           this.cambiandoId = null;
-          this.mensaje = `${m.nombre} volvió a la sección de mascotas activas.`;
+          this.mensaje = `${m.nombre} volvió a Mascotas como Disponible.`;
           this.cargar();
           this.cdr.markForCheck();
         },
@@ -113,7 +136,7 @@ export class BajasAdminComponent implements OnInit {
           this.cambiandoId = null;
           this.error =
             fallo?.error?.non_field_errors?.[0] ??
-            'No se pudo cambiar el estado.';
+            'No se pudo reestablecer la mascota.';
           this.cargar();
           this.cdr.markForCheck();
         },

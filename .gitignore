@@ -9,7 +9,9 @@ db.sqlite3
 
 # Django
 /media/
+/backend/media/
 /staticfiles/
+/backend/staticfiles/
 
 # Angular / Node
 frontend/node_modules/

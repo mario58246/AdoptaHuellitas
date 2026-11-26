@@ -21,7 +21,7 @@ AdoptaHuellitas/
 │   ├── manage.py
 │   ├── requirements.txt
 │   ├── config/            # settings.py, urls.py, asgi.py, wsgi.py
-│   └── adopciones/        # modelos, serializers, views, services, tests
+│   └── adopciones/        # modelos, serializers, views, services, tests y comandos de purga
 └── frontend/              # Angular + Tailwind
     └── src/
 ```
@@ -72,7 +72,7 @@ npm install
 npm start
 ```
 
-SPA: `http://localhost:4200/`
+SPA: `http://localhost:4200/` · Accesos: `http://localhost:4200/ingresar` · Panel: `http://localhost:4200/admin`
 
 ## Endpoints principales
 
@@ -82,6 +82,8 @@ SPA: `http://localhost:4200/`
 | POST | `/api/token/refresh/` | Renovar access token | Público |
 | GET/POST | `/api/mascotas/` | Catálogo / alta de mascotas | Público / Admin |
 | GET | `/api/mascotas/?especie=Perro&tamaño=Mediano` | Filtros combinatorios | Público |
+| GET | `/api/mascotas/bajas/` | Listado de mascotas fallecidas | Admin |
+| PATCH | `/api/mascotas/{id}/` | Editar ficha o cambiar estado (en Bajas solo estado) | Admin |
 | GET/POST | `/api/historial-medico/` | Ficha clínica | Público / Admin |
 | POST | `/api/solicitudes/` | Enviar postulación | Adoptante |
 | POST | `/api/solicitudes/{id}/aprobar/` | Aprobar y generar 15 reportes | Admin |
@@ -92,10 +94,12 @@ SPA: `http://localhost:4200/`
 
 ## Reglas de negocio ya implementadas
 
-- Microchip corporativo con formato obligatorio `CHIP-XXXX-XXXXX` (HTTP 400 si falla).
+- Microchip con norma **ISO 11784/11785**: exactamente 15 dígitos numéricos, sin letras ni guiones (ejemplo `981000123456789`). HTTP 400 si falla. Los chips antiguos `CHIP-XXXX-XXXXX` se convierten automáticamente en la migración `0002`.
 - Al aprobar una solicitud, en una transacción atómica: mascota → `Adoptado` y se crean los 15 reportes (meses 1-12 y 16, 20, 24).
 - Semáforo calculado: verde (Aprobado), azul (En Revisión), amarillo (Pendiente en plazo), rojo (Vencido).
 - Carga híbrida de evidencias: archivo local/Cloudinary o URL externa.
+- **Bajas:** no hay borrado directo (`DELETE` devuelve 405). Al pasar a `Fallecido` se registra `fecha_baja`; la mascota desaparece del catálogo, solicitudes, historial y seguimiento, pero su información se conserva en `/admin/bajas`. En esa sección solo se puede cambiar el estado.
+- **Retención:** a los 5 años de la baja se elimina la mascota junto con solicitudes, 15 reportes e historial médico. La purga se ejecuta al consultar mascotas y también con `python manage.py purgar_bajas` (programable con cron).
 
 ## Flujo de trabajo (GitHub Flow)
 
@@ -114,8 +118,35 @@ git push -u origin feature/admin-crud-mascotas
 
 ## Reparto de roles
 
-- **Angie (Administrador):** CRUD de mascotas, bandeja de solicitudes, auditoría/semáforo de seguimiento e historial médico.
+- **Angie (Administrador):** CRUD de mascotas, bajas y reactivaciones, bandeja de solicitudes, auditoría/semáforo de seguimiento e historial médico.
 - **Mario (Visitante + Adoptante):** landing, catálogo, autenticación JWT, formulario de postulación y portal del adoptante.
+
+## Módulo administrador (Angie)
+
+Panel en **`http://localhost:4200/admin`**. La landing pública sigue en `http://localhost:4200/`.
+
+- Ingresá con el superusuario creado en local (`admin`) y su contraseña.
+- Si no tenés superusuario: `cd backend && python manage.py createsuperuser`.
+- El token JWT se guarda en `localStorage` (`adopta_sesion`) y se envía automáticamente en cada petición.
+- Pantallas: Resumen, Mascotas (alta/edición + microchip ISO, sin borrado), **Bajas** (botón **Reestablecer**), Solicitudes (aprobar/rechazar), Seguimiento (matriz de 15 reportes y semáforo) e Historial médico. Dar de baja, reestablecer, aprobar/rechazar solicitudes y aprobar/corregir reportes usan modales propios de Angular, sin avisos nativos del navegador.
+- La landing pública toma las mascotas `Disponible` desde la API y muestra **máximo 6 fichas** con entrada animada y efecto hover; si hay más, invita a ingresar para ver el catálogo completo.
+- Si una mascota no tiene imagen cargada, se usan los vectores grises semitransparentes de `frontend/public/assets/mascotas/` según su especie. La imagen del hero solo se usa en “Un hogar cambia una vida”.
+- En el alta/edición de mascotas se puede subir una foto real desde el equipo o usar una URL externa. El archivo se envía como `multipart/form-data` y se sirve desde `/media/`; la API devuelve la URL absoluta para que la imagen aparezca en el panel y en la landing. En producción, Cloudinary reemplaza al almacenamiento local.
+- La URL externa debe ser **directa a la imagen** (`.jpg`, `.png`, `.webp`, Cloudinary, Drive, etc.). El backend rechaza URLs de páginas web con un mensaje claro; en la landing, si una imagen externa falla, se usa el vector gris de la especie.
+- `http://localhost:4200/ingresar` muestra las opciones de adoptante (pendiente del módulo de Mario) y administrador (redirige al login del panel).
+- La barra lateral muestra los iconos y sus etiquetas; el login permite mostrar u ocultar la contraseña.
+- La URL de la API está en `frontend/src/app/core/services/api.service.ts` (`API_BASE_URL`); cámbiala por la de Render al desplegar.
+
+Estructura del frontend:
+
+```text
+frontend/src/app/
+├── core/          # modelos, ApiService, AuthService, interceptor y guard
+├── modules/admin/ # shell, rutas, estilos y páginas del panel
+├── modules/public/# pantalla de accesos (/ingresar)
+├── app.ts         # landing pública de Mario (catálogo cargado desde la API)
+└── app-shell.ts   # raíz con <router-outlet>
+```
 
 ## Referencias de diseño
 

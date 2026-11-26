@@ -22,7 +22,7 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.2c-1.6-1.3-7.5-5.5-7.5-10.1a4.2 4.2 0 0 1 7.5-2.6 4.2 4.2 0 0 1 7.5 2.6c0 4.6-5.9 8.8-7.5 10.1Z"/></svg>
         <span>Quiero ayudar</span>
       </a>
-      <a class="login-link" href="#mascotas">Ingresar</a>
+      <a class="login-link" routerLink="/ingresar">Ingresar</a>
     </div>
   </header>
 
@@ -73,7 +73,7 @@
         <h2>Compañeros que esperan</h2>
         <p class="section-intro">Cada uno tiene su propia historia. Quizás ahora les toca escribirla juntos.</p>
       </div>
-      <a class="button button-outline" href="#mascotas">Ver todos los animales <span aria-hidden="true">↗</span></a>
+      <a class="button button-outline" routerLink="/ingresar">Ver todos los animales <span aria-hidden="true">↗</span></a>
     </div>
 
     <div class="pet-tools">
@@ -89,10 +89,10 @@
     </div>
 
     <div class="pet-grid">
-      @for (pet of filteredPets(); track pet.name) {
-        <article class="pet-card">
+      @for (pet of filteredPets(); track pet.id ?? pet.name; let i = $index) {
+        <article class="pet-card" [style.animation-delay.ms]="i * 80">
           <div class="pet-image-wrap">
-            <img [src]="pet.image" [alt]="pet.imageAlt" loading="lazy" />
+            <img [src]="pet.image" [alt]="pet.imageAlt" loading="lazy" (error)="usarFallback(pet)" />
             <span class="availability"><span></span> Disponible</span>
             <button type="button" class="favorite-button" [attr.aria-label]="'Guardar a ' + pet.name" (click)="toggleFavorite(pet.name)" [class.is-favorite]="favorites().includes(pet.name)">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.8c0 4.5-8.8 10-8.8 10s-8.8-5.5-8.8-10a4.8 4.8 0 0 1 8.8-2.7 4.8 4.8 0 0 1 8.8 2.7Z"/></svg>
@@ -109,6 +109,13 @@
         <p class="empty-state">No encontramos mascotas con esos filtros. Probá con otra búsqueda.</p>
       }
     </div>
+
+    @if (totalMascotas() > maxFichas) {
+      <p class="catalogo-aviso">
+        Mostrando {{ maxFichas }} de {{ totalMascotas() }} mascotas disponibles.
+        <a routerLink="/ingresar">Ingresá</a> para ver el catálogo completo.
+      </p>
+    }
   </section>
 
   <section class="process-section section-pad" id="proceso">

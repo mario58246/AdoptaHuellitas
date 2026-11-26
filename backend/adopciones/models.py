@@ -6,14 +6,15 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from django.utils import timezone
 
-CHIP_PATTERN = re.compile(r"^CHIP-\d{4}-\d{5}$")
+CHIP_PATTERN = re.compile(r"^\d{15}$")
 
 
 def validar_codigo_chip(value):
-    """Valida el identificador corporativo CHIP-XXXX-XXXXX."""
+    """Valida el microchip según ISO 11784/11785: 15 dígitos, sin letras ni guiones."""
     if not CHIP_PATTERN.fullmatch(value or ""):
         raise ValidationError(
-            "El código de microchip debe tener el formato CHIP-XXXX-XXXXX."
+            "El microchip debe tener 15 dígitos numéricos (ISO 11784/11785), "
+            "por ejemplo 981000123456789."
         )
 
 
@@ -66,18 +67,48 @@ class MascotaRescatada(models.Model):
         default=EstadoAdopcion.DISPONIBLE,
     )
     codigo_chip = models.CharField(
-        max_length=14,
+        max_length=15,
         unique=True,
         validators=[validar_codigo_chip],
-        help_text="Formato obligatorio: CHIP-XXXX-XXXXX",
+        help_text="ISO 11784/11785: 15 dígitos, por ejemplo 981000123456789.",
     )
     fecha_ingreso = models.DateField(default=timezone.localdate)
     historia = models.TextField(blank=True)
     imagen = models.ImageField(upload_to="mascotas/", blank=True, null=True)
     imagen_url = models.URLField(blank=True)
     archivada = models.BooleanField(default=False)
+    fecha_baja = models.DateField(
+        null=True,
+        blank=True,
+        help_text="Fecha en que pasó a Fallecido; inicia el plazo de 5 años.",
+    )
     creado_en = models.DateTimeField(auto_now_add=True)
     actualizado_en = models.DateTimeField(auto_now=True)
+
+    def save(self, *args, **kwargs):
+        """Registra la fecha de baja al pasar a Fallecido y la limpia al reactivar."""
+        anterior = None
+        if self.pk:
+            anterior = (
+                type(self)
+                .objects.filter(pk=self.pk)
+                .values_list("estado_adopcion", flat=True)
+                .first()
+            )
+
+        if self.estado_adopcion == EstadoAdopcion.FALLECIDO:
+            if anterior != EstadoAdopcion.FALLECIDO:
+                self.fecha_baja = timezone.localdate()
+        elif anterior == EstadoAdopcion.FALLECIDO:
+            self.fecha_baja = None
+
+        actualizados = kwargs.get("update_fields")
+        if actualizados is not None:
+            campos = set(actualizados)
+            campos.add("fecha_baja")
+            kwargs["update_fields"] = list(campos)
+
+        super().save(*args, **kwargs)
 
     class Meta:
         verbose_name = "Mascota rescatada"

@@ -1,6 +1,9 @@
 from rest_framework import serializers
+from rest_framework.request import Request
 
+from .imagenes import validar_url_imagen
 from .models import (
+    EstadoAdopcion,
     HistorialMedico,
     MascotaRescatada,
     SeguimientoPostAdopcion,
@@ -9,7 +12,13 @@ from .models import (
 
 
 class MascotaRescatadaSerializer(serializers.ModelSerializer):
-    imagen_display = serializers.CharField(read_only=True)
+    imagen_display = serializers.SerializerMethodField()
+    historial_count = serializers.IntegerField(
+        source="historial_medico.count", read_only=True
+    )
+    seguimientos_count = serializers.IntegerField(
+        source="seguimientos.count", read_only=True
+    )
 
     class Meta:
         model = MascotaRescatada
@@ -29,10 +38,42 @@ class MascotaRescatadaSerializer(serializers.ModelSerializer):
             "imagen_url",
             "imagen_display",
             "archivada",
+            "fecha_baja",
+            "historial_count",
+            "seguimientos_count",
             "creado_en",
             "actualizado_en",
         ]
         read_only_fields = ["creado_en", "actualizado_en"]
+
+    def get_imagen_display(self, obj):
+        """Devuelve una URL absoluta para que el frontend pueda mostrar la foto."""
+        imagen = obj.imagen_display
+        if not imagen:
+            return None
+        if imagen.startswith("/"):
+            request = self.context.get("request")
+            if isinstance(request, Request):
+                return request.build_absolute_uri(imagen)
+            return f"http://127.0.0.1:8000{imagen}"
+        return imagen
+
+    def validate_imagen_url(self, valor):
+        """Evita guardar páginas web como si fueran fotos."""
+        return validar_url_imagen(valor)
+
+    def validate(self, attrs):
+        """En Bajas solo se permite cambiar el estado; el resto queda intacto."""
+        if (
+            self.instance
+            and self.instance.estado_adopcion == EstadoAdopcion.FALLECIDO
+            and set(attrs) - {"estado_adopcion"}
+        ):
+            raise serializers.ValidationError(
+                "Una mascota en Bajas solo puede cambiar de estado; "
+                "no se pueden modificar sus datos."
+            )
+        return attrs
 
 
 class HistorialMedicoSerializer(serializers.ModelSerializer):

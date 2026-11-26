@@ -121,3 +121,11 @@ git push -u origin feature/admin-crud-mascotas
 
 - `interfaces ejemplo/`: CSS exportado de los wireframes (panel administrativo, seguimiento con semáforo, catálogo, etc.).
 - `Adopta Huellitas.fig`: archivo original de Figma.
+
+## Contacto
+
+- **Contáctenos:** +57 3136410020
+- **Correo:** ag123angie1@gmail.com
+- **Ubicación:** Pasto, Nariño, Colombia
+
+Estos datos son los oficiales del refugio y se muestran en el pie de la landing pública.

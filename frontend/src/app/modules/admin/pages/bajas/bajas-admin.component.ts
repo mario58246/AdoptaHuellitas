@@ -96,7 +96,7 @@ export class BajasAdminComponent implements OnInit {
         this.cdr.markForCheck();
       },
       error: () => {
-        this.error = 'No se pudieron cargar las bajas. Revisá el backend.';
+        this.error = 'No se pudieron cargar las bajas. Verifica el backend.';
         this.cdr.markForCheck();
       },
     });

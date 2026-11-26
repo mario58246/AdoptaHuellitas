@@ -1,7 +1,9 @@
 from datetime import date, timedelta
+from io import StringIO
 from unittest.mock import MagicMock, patch
 
 from django.contrib.auth import get_user_model
+from django.core.management import call_command
 from django.core.exceptions import ValidationError
 from django.test import TestCase
 from django.utils import timezone
@@ -71,6 +73,20 @@ class ReglasNegocioTests(TestCase):
         )
         self.assertEqual(
             reportes.get(numero_reporte=15).semaforo, "amarillo"
+        )
+
+
+class MascotasDemoCommandTests(TestCase):
+    def test_command_adds_demo_pets_once_without_duplicates(self):
+        salida = StringIO()
+
+        call_command("cargar_mascotas_demo", stdout=salida)
+        call_command("cargar_mascotas_demo", stdout=salida)
+
+        self.assertEqual(MascotaRescatada.objects.count(), 5)
+        self.assertEqual(
+            MascotaRescatada.objects.filter(estado_adopcion="Disponible").count(),
+            5,
         )
 
 

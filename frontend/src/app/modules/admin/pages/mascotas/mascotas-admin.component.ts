@@ -253,7 +253,7 @@ export class MascotasAdminComponent implements OnInit {
         this.cdr.markForCheck();
       },
       error: () => {
-        this.error = 'No se pudieron cargar las mascotas. Revisá el backend.';
+        this.error = 'No se pudieron cargar las mascotas. Verifica el backend.';
         this.cdr.markForCheck();
       },
     });

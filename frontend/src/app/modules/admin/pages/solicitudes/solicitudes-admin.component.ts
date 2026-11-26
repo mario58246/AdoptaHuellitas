@@ -12,7 +12,7 @@ import { adminConfirmStyles, adminStyles } from '../../admin.styles';
     <div class="adm-page-head">
       <div>
         <h1 class="adm-title">Solicitudes de adopción</h1>
-        <p class="adm-subtitle">Revisá cada postulación. Al aprobar se genera el plan de 15 reportes.</p>
+        <p class="adm-subtitle">Revisa cada postulación. Al aprobar se genera el plan de 15 reportes.</p>
       </div>
       <select class="adm-select" style="max-width:200px" [(ngModel)]="filtro" (ngModelChange)="filtrar()">
         <option value="">Todas</option>
@@ -125,7 +125,7 @@ export class SolicitudesAdminComponent implements OnInit {
         this.cdr.markForCheck();
       },
       error: () => {
-        this.error = 'No se pudieron cargar las solicitudes. Revisá el backend.';
+        this.error = 'No se pudieron cargar las solicitudes. Verifica el backend.';
         this.cdr.markForCheck();
       },
     });

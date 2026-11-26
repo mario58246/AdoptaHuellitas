@@ -141,7 +141,7 @@ export class DashboardComponent implements OnInit {
         this.cdr.markForCheck();
       },
       error: () => {
-        this.error = 'No se pudo cargar el resumen. Revisá que el backend esté activo en http://127.0.0.1:8000.';
+        this.error = 'No se pudo cargar el resumen. Verifica que el backend esté activo en http://127.0.0.1:8000.';
         this.cargando = false;
         this.cdr.markForCheck();
       },

@@ -1,0 +1,57 @@
+<div class="public-shell">
+  <header class="public-header">
+    <a class="public-brand" routerLink="/" aria-label="Adopta Huellitas, inicio" (click)="closeMenu()">
+      <img src="assets/logo-adopta-huellitas.png" alt="" aria-hidden="true" />
+      <span>Adopta <strong>Huellitas</strong></span>
+    </a>
+
+    <button
+      class="public-menu-toggle"
+      type="button"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuOpen()"
+      aria-label="Abrir menú de navegación"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="public-nav" [class.nav-open]="menuOpen()" aria-label="Navegación principal">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Inicio</a>
+      <a routerLink="/catalogo" routerLinkActive="active" (click)="closeMenu()">Adoptar</a>
+      <a routerLink="/como-funciona" routerLinkActive="active" (click)="closeMenu()">Cómo funciona</a>
+      <a routerLink="/historias" routerLinkActive="active" (click)="closeMenu()">Historias</a>
+    </nav>
+
+    <a class="public-login" routerLink="/ingresar">Ingresar</a>
+  </header>
+
+  <router-outlet />
+
+  <footer class="public-footer">
+    <div class="public-footer-main public-container">
+      <div class="public-footer-brand">
+        <a class="public-brand footer-brand" routerLink="/">
+          <img src="assets/logo-adopta-huellitas.png" alt="" aria-hidden="true" />
+          <span>Adopta <strong>Huellitas</strong></span>
+        </a>
+        <p>Un refugio, muchas historias y un mismo deseo: que cada animal encuentre un hogar.</p>
+      </div>
+      <div class="public-footer-links">
+        <strong>Explorar</strong>
+        <a routerLink="/catalogo">Mascotas en adopción</a>
+        <a routerLink="/como-funciona">Proceso de adopción</a>
+        <a routerLink="/historias">Historias</a>
+      </div>
+      <div class="public-footer-contact">
+        <strong>Hablemos</strong>
+        <a href="tel:+573136410020">+57 313 641 0020</a>
+        <a href="mailto:ag123angie1@gmail.com">ag123angie1@gmail.com</a>
+        <span>Pasto, Nariño, Colombia</span>
+      </div>
+    </div>
+    <div class="public-footer-bottom public-container">
+      <span>© 2026 Adopta Huellitas. Hecho con cariño por quienes creen en las segundas oportunidades.</span>
+      <a routerLink="/ingresar">Acceso al refugio</a>
+    </div>
+  </footer>
+</div>

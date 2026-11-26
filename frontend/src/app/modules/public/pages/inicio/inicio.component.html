@@ -1,0 +1,93 @@
+<main class="public-page home-page">
+  <section class="home-hero">
+    <div class="home-hero-copy">
+      <p class="public-eyebrow">ADOPCIÓN CON ACOMPAÑAMIENTO</p>
+      <h1>Un hogar cambia <span>una vida.</span></h1>
+      <p class="public-lead">
+        Hay alguien esperando conocerte. Encuentra a tu compañero ideal y comencemos una historia juntos.
+      </p>
+      <div class="home-actions">
+        <a class="public-button" routerLink="/catalogo">Conoce a quienes esperan <span>→</span></a>
+        <a class="public-button secondary" routerLink="/como-funciona">Cómo funciona</a>
+      </div>
+      <p class="home-assurance">✓ Adopciones responsables, con acompañamiento de principio a fin</p>
+    </div>
+    <div class="home-hero-image">
+      <img
+        src="assets/hero-mascotas.webp"
+        alt="Una mascota comparte un momento lleno de cariño con su persona"
+        fetchpriority="high"
+      />
+      <div class="home-image-note">
+        <strong>Un vínculo para siempre</strong>
+        <span>La próxima historia puede ser la tuya</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-values public-container" aria-label="Nuestro compromiso">
+    <article>
+      <span class="value-icon">⌂</span>
+      <div><h2>Adopción responsable</h2><p>Buscamos el hogar indicado para cada animal.</p></div>
+    </article>
+    <article>
+      <span class="value-icon peach">♡</span>
+      <div><h2>Cuidado con cariño</h2><p>Salud, respeto y tiempo para sanar.</p></div>
+    </article>
+    <article>
+      <span class="value-icon blue">✓</span>
+      <div><h2>Seguimiento cercano</h2><p>Seguimos presentes después de la adopción.</p></div>
+    </article>
+  </section>
+
+  <section class="home-pets">
+    <div class="public-container">
+      <div class="home-section-heading">
+        <div>
+          <p class="public-eyebrow">ENCONTRÁ A TU COMPAÑERO</p>
+          <h2 class="public-heading">Compañeros que esperan</h2>
+          <p class="public-lead">Cada uno tiene su propia historia. Quizás ahora les toca escribirla juntos.</p>
+        </div>
+        <a class="public-button secondary" routerLink="/catalogo">Ver catálogo completo <span>↗</span></a>
+      </div>
+
+      @if (cargando()) {
+        <p class="home-message" role="status">Cargando mascotas disponibles…</p>
+      } @else if (error()) {
+        <p class="home-message error-message" role="alert">{{ error() }}</p>
+      } @else if (destacadas().length) {
+        <div class="home-pet-grid">
+          @for (mascota of destacadas(); track mascota.id) {
+            <article class="home-pet-card">
+              <img
+                [src]="mascota.imagen"
+                [alt]="mascota.nombre + ', ' + mascota.especie.toLowerCase() + ' en adopción'"
+                loading="lazy"
+                (error)="usarImagenAlternativa(mascota)"
+              />
+              <div class="home-pet-copy">
+                <span class="pet-status">Disponible</span>
+                <h3>{{ mascota.nombre }}</h3>
+                <p>{{ mascota.especie }} · {{ mascota.edad }} · {{ mascota.tamano }}</p>
+                <a [routerLink]="['/catalogo']">Conocer a {{ mascota.nombre }} <span>→</span></a>
+              </div>
+            </article>
+          }
+        </div>
+      } @else {
+        <p class="home-message">Por ahora no hay mascotas publicadas. Vuelve pronto para conocer las novedades.</p>
+      }
+    </div>
+  </section>
+
+  <section class="home-invitation">
+    <div class="public-container home-invitation-content">
+      <div>
+        <p class="public-eyebrow">UN CAMINO COMPARTIDO</p>
+        <h2 class="public-heading">Adoptar es el comienzo de una historia.</h2>
+        <p class="public-lead">Conoce cada paso y el acompañamiento que ofrecemos para que el encuentro sea para siempre.</p>
+      </div>
+      <a class="public-button" routerLink="/como-funciona">Conocer el proceso <span>→</span></a>
+    </div>
+  </section>
+</main>

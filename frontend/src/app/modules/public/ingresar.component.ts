@@ -16,17 +16,17 @@ import { RouterLink } from '@angular/router';
 
       <section class="ingresar-hero">
         <p class="ingresar-eyebrow">ACCESO AL REFUGIO</p>
-        <h1>¿Cómo querés ingresar?</h1>
+        <h1>¿Cómo quieres ingresar?</h1>
         <p class="ingresar-lead">
-          Elegí el acceso según tu rol. El catálogo público muestra hasta 20 mascotas;
-          para ver el resto necesitás ingresar.
+          El catálogo, el proceso de adopción y las historias están disponibles sin iniciar sesión.
+          Elige el acceso según tu rol.
         </p>
 
         <div class="ingresar-opciones">
           <article class="ingresar-card">
             <span class="ingresar-icono" aria-hidden="true">🐾</span>
             <h2>Soy adoptante</h2>
-            <p>Ingresá o creá tu cuenta para conocer todas las mascotas y seguir tu adopción.</p>
+            <p>El portal para enviar solicitudes y seguir una adopción estará disponible próximamente.</p>
             <div class="ingresar-acciones">
               <button type="button" class="ingresar-btn" disabled>Ingresar</button>
               <button type="button" class="ingresar-btn outline" disabled>Crear cuenta</button>
@@ -39,7 +39,7 @@ import { RouterLink } from '@angular/router';
           <article class="ingresar-card admin">
             <span class="ingresar-icono" aria-hidden="true">🛡️</span>
             <h2>Soy administrador</h2>
-            <p>Accedé al panel del refugio para gestionar mascotas, solicitudes, bajas y seguimiento.</p>
+            <p>Accede al panel del refugio para gestionar mascotas, solicitudes, bajas y seguimiento.</p>
             <div class="ingresar-acciones">
               <a class="ingresar-btn primary" routerLink="/admin/login">Ingresar al panel</a>
             </div>

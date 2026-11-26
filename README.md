@@ -74,6 +74,17 @@ npm start
 
 SPA: `http://localhost:4200/` · Accesos: `http://localhost:4200/ingresar` · Panel: `http://localhost:4200/admin`
 
+La sección pública está organizada en páginas independientes: Inicio (`/`), catálogo (`/catalogo`), proceso de adopción (`/como-funciona`) e historias (`/historias`). El catálogo consulta las mascotas disponibles en la API.
+
+Para agregar mascotas de ejemplo a la base local, desde la raíz:
+
+```powershell
+cd backend
+python manage.py cargar_mascotas_demo
+```
+
+El comando agrega cinco mascotas disponibles y es seguro de ejecutar más de una vez; no modifica los registros existentes.
+
 ## Endpoints principales
 
 | Método | Ruta | Descripción | Acceso |

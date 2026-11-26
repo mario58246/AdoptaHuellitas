@@ -1,0 +1,119 @@
+:root {
+  color-scheme: light;
+  --public-ink: #17312e;
+  --public-muted: #667975;
+  --public-green: #167c6c;
+  --public-mint: #00a991;
+  --public-pale: #edf6f3;
+  --public-line: #dce8e5;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: var(--public-ink);
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.public-container {
+  width: min(1180px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.public-eyebrow {
+  margin: 0 0 13px;
+  color: var(--public-green);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  line-height: 1.5;
+}
+
+.public-button {
+  min-height: 46px;
+  padding: 0 19px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  color: #fff;
+  background: var(--public-green);
+  font-size: 14px;
+  font-weight: 700;
+  transition: transform 0.18s ease, background 0.18s ease;
+  cursor: pointer;
+}
+
+.public-button:hover {
+  transform: translateY(-2px);
+  background: #116557;
+}
+
+.public-button.secondary {
+  border-color: var(--public-line);
+  color: var(--public-green);
+  background: #fff;
+}
+
+.public-button.secondary:hover {
+  background: #f7fbf9;
+}
+
+.public-heading {
+  margin: 0 0 11px;
+  font-family: 'Franklin Gothic Medium', 'Trebuchet MS', sans-serif;
+  font-size: clamp(30px, 3.5vw, 43px);
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+.public-lead {
+  margin: 0;
+  color: var(--public-muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.public-page {
+  min-height: 60vh;
+}
+
+@media (max-width: 600px) {
+  .public-container {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .public-button {
+    min-height: 43px;
+    padding-inline: 15px;
+    font-size: 13px;
+  }
+}

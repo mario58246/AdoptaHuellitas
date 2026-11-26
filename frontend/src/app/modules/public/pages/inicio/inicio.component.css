@@ -1,0 +1,364 @@
+.home-hero {
+  min-height: 560px;
+  padding: 60px clamp(24px, 7vw, 100px);
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(36px, 6vw, 86px);
+  background:
+    radial-gradient(ellipse at 92% 9%, rgb(0 169 145 / 14%), transparent 28%),
+    linear-gradient(110deg, #edf6f3 0%, #f1f8f5 54%, #e8f4ef 100%);
+}
+
+.home-hero-copy {
+  max-width: 540px;
+  animation: home-arrive 0.65s both;
+}
+
+.home-hero h1 {
+  max-width: 550px;
+  margin: 0;
+  font: 800 clamp(48px, 5.4vw, 70px)/1.04 'Franklin Gothic Medium', 'Trebuchet MS', sans-serif;
+}
+
+.home-hero h1 span {
+  color: var(--public-green);
+}
+
+.home-hero .public-lead {
+  max-width: 475px;
+  margin: 20px 0 25px;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+.home-assurance {
+  margin: 20px 0 0;
+  color: var(--public-muted);
+  font-size: 12px;
+}
+
+.home-hero-image {
+  min-height: 390px;
+  position: relative;
+  animation: home-arrive 0.8s 0.08s both;
+}
+
+.home-hero-image > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center 45%;
+  border-radius: 100px 25px 100px 25px;
+  box-shadow: 0 24px 55px rgb(26 63 54 / 12%);
+}
+
+.home-image-note {
+  max-width: calc(100% - 24px);
+  padding: 13px 17px;
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: -20px;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 10px 35px rgb(16 40 37 / 12%);
+}
+
+.home-image-note strong {
+  font-size: 13px;
+}
+
+.home-image-note span {
+  color: var(--public-muted);
+  font-size: 11px;
+}
+
+.home-values {
+  padding-block: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  border-bottom: 1px solid var(--public-line);
+}
+
+.home-values article {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.value-icon {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  color: var(--public-green);
+  background: #e4f4ec;
+  font-size: 22px;
+}
+
+.value-icon.peach {
+  color: #b9664b;
+  background: #faeee8;
+}
+
+.value-icon.blue {
+  color: #38798a;
+  background: #e8f2f4;
+}
+
+.home-values h2 {
+  margin: 0 0 5px;
+  font: 700 14px 'Franklin Gothic Medium', 'Trebuchet MS', sans-serif;
+}
+
+.home-values p {
+  margin: 0;
+  color: var(--public-muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.home-pets {
+  padding-block: 76px;
+  background: radial-gradient(circle at 8% 12%, rgb(22 124 108 / 9%), transparent 32%), #f4f8f7;
+}
+
+.home-section-heading {
+  margin-bottom: 28px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.home-section-heading .public-heading {
+  margin-bottom: 9px;
+}
+
+.home-section-heading .public-lead {
+  font-size: 14px;
+}
+
+.home-pet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.home-pet-card {
+  overflow: hidden;
+  border: 1px solid var(--public-line);
+  border-radius: 12px;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-pet-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgb(30 71 61 / 10%);
+}
+
+.home-pet-card > img {
+  width: 100%;
+  height: 225px;
+  display: block;
+  object-fit: cover;
+  background: #e7efeb;
+}
+
+.home-pet-copy {
+  padding: 18px 20px 20px;
+}
+
+.pet-status {
+  padding: 6px 9px;
+  border-radius: 999px;
+  color: var(--public-green);
+  background: #e4f6ed;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.home-pet-copy h3 {
+  margin: 13px 0 6px;
+  font: 800 23px 'Franklin Gothic Medium', 'Trebuchet MS', sans-serif;
+}
+
+.home-pet-copy p {
+  margin: 0 0 14px;
+  color: var(--public-muted);
+  font-size: 12px;
+}
+
+.home-pet-copy a {
+  display: inline-flex;
+  gap: 8px;
+  color: var(--public-green);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.home-message {
+  padding: 30px 20px;
+  border: 1px dashed #b6cdc4;
+  border-radius: 10px;
+  color: var(--public-muted);
+  text-align: center;
+  font-size: 14px;
+}
+
+.error-message {
+  color: #9f3c35;
+  border-color: #e9b5b0;
+}
+
+.home-invitation {
+  padding-block: 55px;
+  background: #ddf3e9;
+}
+
+.home-invitation-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.home-invitation .public-heading {
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+.home-invitation .public-lead {
+  max-width: 610px;
+  font-size: 14px;
+}
+
+@keyframes home-arrive {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 820px) {
+  .home-hero {
+    min-height: 0;
+    padding-block: 50px 60px;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(43px, 7vw, 58px);
+  }
+
+  .home-hero-image {
+    min-height: 330px;
+  }
+
+  .home-values {
+    gap: 15px;
+  }
+
+  .home-values article {
+    gap: 9px;
+  }
+
+  .home-values h2 {
+    font-size: 12px;
+  }
+
+  .home-values p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-hero {
+    padding: 43px 20px 51px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(45px, 12vw, 58px);
+  }
+
+  .home-hero .public-lead {
+    margin: 16px 0 20px;
+    font-size: 14px;
+  }
+
+  .home-hero-image {
+    min-height: 285px;
+    margin: 0 5px 8px;
+  }
+
+  .home-hero-image > img {
+    border-radius: 75px 22px 76px 22px;
+  }
+
+  .home-image-note {
+    left: -8px;
+    bottom: 15px;
+  }
+
+  .home-values {
+    padding-block: 21px;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .home-values h2 {
+    font-size: 13px;
+  }
+
+  .home-values p {
+    font-size: 11px;
+  }
+
+  .home-pets {
+    padding-block: 52px;
+  }
+
+  .home-section-heading,
+  .home-invitation-content {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  .home-pet-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .home-pet-card > img {
+    height: 230px;
+  }
+
+  .home-invitation {
+    padding-block: 45px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

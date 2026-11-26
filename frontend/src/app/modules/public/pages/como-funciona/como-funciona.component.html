@@ -1,0 +1,63 @@
+<main class="public-page process-page">
+  <section class="process-hero">
+    <div class="public-container process-hero-inner">
+      <div>
+        <p class="public-eyebrow">UN CAMINO COMPARTIDO</p>
+        <h1 class="public-heading">Una adopción responsable empieza con conocerse</h1>
+        <p class="public-lead">
+          Te acompañamos paso a paso para que cada encuentro se convierta en un vínculo seguro, cuidado y duradero.
+        </p>
+        <a class="public-button" routerLink="/catalogo">Encontrar a tu compañero <span>→</span></a>
+      </div>
+      <div class="process-hero-art" aria-hidden="true">
+        <img src="assets/hero-mascotas.webp" alt="" />
+        <span>Un hogar, nuevas oportunidades</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="process-steps public-container">
+    <div class="process-heading">
+      <p class="public-eyebrow">SIMPLE, CERCANO Y CON CUIDADO</p>
+      <h2 class="public-heading">Así es el proceso</h2>
+      <p class="public-lead">Cada historia es distinta. Estos son los pasos que compartimos para empezar.</p>
+    </div>
+    <div class="process-step-grid">
+      @for (paso of pasos; track paso.numero) {
+        <article class="process-step-card">
+          <div class="process-step-top"><span>{{ paso.numero }}</span><i aria-hidden="true">{{ paso.icono }}</i></div>
+          <h3>{{ paso.titulo }}</h3>
+          <p>{{ paso.detalle }}</p>
+        </article>
+      }
+    </div>
+  </section>
+
+  <section class="process-follow">
+    <div class="public-container process-follow-inner">
+      <div class="process-follow-icon" aria-hidden="true">♡</div>
+      <div>
+        <p class="public-eyebrow">EL ACOMPAÑAMIENTO SIGUE</p>
+        <h2 class="public-heading">Estamos cerca también después de llegar a casa.</h2>
+        <p class="public-lead">
+          Durante los primeros 24 meses mantenemos el contacto y recibimos reportes para conocer cómo avanza la adaptación.
+          Si aparece una duda, el refugio puede orientar a la familia.
+        </p>
+      </div>
+      <div class="process-follow-list">
+        @for (compromiso of compromisos; track compromiso) {
+          <p><span aria-hidden="true">✓</span>{{ compromiso }}</p>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="process-questions public-container">
+    <div>
+      <p class="public-eyebrow">¿TENÉS DUDAS?</p>
+      <h2 class="public-heading">Podemos conversar antes de que decidas.</h2>
+      <p class="public-lead">Adoptar es una decisión importante. Escríbenos para conocer los pasos y resolver tus consultas.</p>
+    </div>
+    <a class="public-button secondary" href="mailto:ag123angie1@gmail.com">Contactar al refugio <span>↗</span></a>
+  </section>
+</main>

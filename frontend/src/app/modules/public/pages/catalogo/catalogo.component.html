@@ -1,0 +1,93 @@
+<main class="public-page catalog-page">
+  <section class="catalog-hero">
+    <div class="public-container">
+      <p class="public-eyebrow">UNA NUEVA AMISTAD TE ESPERA</p>
+      <h1 class="public-heading">Encuentra a tu compañero ideal</h1>
+      <p class="public-lead">
+        Cada mascota tiene una personalidad única. Explora sus perfiles y descubre quién puede sumar alegría a tu hogar.
+      </p>
+    </div>
+  </section>
+
+  <section class="catalog-content public-container">
+    <div class="catalog-toolbar">
+      <label class="catalog-search">
+        <span aria-hidden="true">⌕</span>
+        <input
+          type="search"
+          placeholder="Buscar por nombre..."
+          [value]="busqueda()"
+          (input)="actualizarBusqueda($event)"
+          aria-label="Buscar mascota por nombre"
+        />
+      </label>
+
+      <div class="catalog-filters">
+        <div class="catalog-species" aria-label="Filtrar por especie">
+          <button type="button" [class.selected]="especieSeleccionada() === 'Todos'" (click)="cambiarEspecie('Todos')">Todos</button>
+          <button type="button" [class.selected]="especieSeleccionada() === 'Perro'" (click)="cambiarEspecie('Perro')">Perros</button>
+          <button type="button" [class.selected]="especieSeleccionada() === 'Gato'" (click)="cambiarEspecie('Gato')">Gatos</button>
+        </div>
+        <label class="catalog-size">
+          <span>Tamaño</span>
+          <select [value]="tamanoSeleccionado()" (change)="cambiarTamano($event)" aria-label="Filtrar por tamaño">
+            <option value="Todos">Todos</option>
+            <option value="Pequeño">Pequeño</option>
+            <option value="Mediano">Mediano</option>
+            <option value="Grande">Grande</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <p class="catalog-count" aria-live="polite">
+      @if (!cargando() && !error()) {
+        {{ mascotasFiltradas().length }} {{ mascotasFiltradas().length === 1 ? 'compañero disponible' : 'compañeros disponibles' }}
+      }
+    </p>
+
+    @if (cargando()) {
+      <p class="catalog-message" role="status">Cargando mascotas disponibles…</p>
+    } @else if (error()) {
+      <p class="catalog-message catalog-error" role="alert">{{ error() }}</p>
+    } @else if (mascotasFiltradas().length) {
+      <div class="catalog-grid">
+        @for (mascota of mascotasFiltradas(); track mascota.id) {
+          <article class="catalog-card">
+            <div class="catalog-card-image">
+              <img
+                [src]="mascota.imagen"
+                [alt]="mascota.nombre + ', ' + mascota.especie.toLowerCase() + ' en adopción'"
+                loading="lazy"
+                (error)="usarImagenAlternativa(mascota)"
+              />
+              <span class="catalog-status"><i></i> Disponible</span>
+            </div>
+            <div class="catalog-card-body">
+              <div class="catalog-name-row">
+                <h2>{{ mascota.nombre }}</h2>
+                <span>{{ mascota.edad }}</span>
+              </div>
+              <p class="catalog-meta">{{ mascota.especie }} · {{ mascota.tamano }}{{ mascota.sexo ? ' · ' + mascota.sexo : '' }}</p>
+              <p class="catalog-story">{{ mascota.historia }}</p>
+              <a
+                class="catalog-contact"
+                [href]="contactoUrl(mascota)"
+              >
+                Quiero conocer a {{ mascota.nombre }} <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+        }
+      </div>
+    } @else {
+      <p class="catalog-message">No encontramos mascotas con esos filtros. Prueba con otra búsqueda.</p>
+    }
+
+    <aside class="catalog-note">
+      <strong>¿Todavía tienes preguntas?</strong>
+      <span>Te contamos cómo es el proceso y qué acompañamiento brindamos.</span>
+      <a routerLink="/como-funciona">Conocer el proceso <span aria-hidden="true">→</span></a>
+    </aside>
+  </section>
+</main>

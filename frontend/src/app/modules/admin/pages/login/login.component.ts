@@ -12,7 +12,7 @@ import { adminStyles } from '../../admin.styles';
       <form class="adm-login-card" (ngSubmit)="ingresar()" #formulario="ngForm">
         <img class="adm-login-logo" src="assets/logo-adopta-huellitas.png" alt="Adopta Huellitas" />
         <h1>Panel del refugio</h1>
-        <p>Ingresá con tu usuario de administrador para gestionar adopciones.</p>
+        <p>Ingresa con tu usuario de administrador para gestionar adopciones.</p>
 
         <div class="adm-field">
           <label for="usuario">Usuario</label>
@@ -85,7 +85,7 @@ export class LoginComponent {
     this.auth.login(this.usuario.trim(), this.clave).subscribe({
       next: () => this.router.navigateByUrl('/admin'),
       error: () => {
-        this.error = 'No se pudo iniciar sesión. Revisá el usuario y la contraseña.';
+        this.error = 'No se pudo iniciar sesión. Verifica el usuario y la contraseña.';
         this.cargando = false;
       },
     });

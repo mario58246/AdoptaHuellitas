@@ -1,0 +1,51 @@
+<main class="public-page stories-page">
+  <section class="stories-hero">
+    <div class="public-container">
+      <p class="public-eyebrow">CADA ADOPCIÓN ABRE UN CAPÍTULO</p>
+      <h1 class="public-heading">Historias que nos recuerdan por qué</h1>
+      <p class="public-lead">
+        Un encuentro puede cambiar dos vidas. Estas historias de muestra reflejan los nuevos comienzos que queremos acompañar.
+      </p>
+    </div>
+  </section>
+
+  <section class="stories-content public-container">
+    <div class="stories-intro">
+      <div>
+        <p class="public-eyebrow">UN VÍNCULO, MUCHOS RECUERDOS</p>
+        <h2 class="public-heading">Pequeños momentos, grandes historias</h2>
+      </div>
+      <p class="public-lead">La confianza se construye con tiempo, cuidado y una familia dispuesta a abrir su hogar.</p>
+    </div>
+
+    <div class="stories-grid">
+      @for (historia of historias; track historia.nombre) {
+        <article class="story-card" [class]="historia.estilo">
+          <img [src]="historia.imagen" [alt]="'Historia de ' + historia.nombre" loading="lazy" />
+          <div class="story-copy">
+            <span class="story-tag">{{ historia.etiqueta }}</span>
+            <p class="story-pet">{{ historia.mascota }}</p>
+            <h2>{{ historia.cita }}</h2>
+            <p>{{ historia.relato }}</p>
+            <span class="story-name">La historia de {{ historia.nombre }} <span aria-hidden="true">♡</span></span>
+          </div>
+        </article>
+      }
+    </div>
+
+    <p class="stories-disclaimer">
+      Historias e imágenes ilustrativas de ejemplo. Se reemplazarán por testimonios reales con autorización de sus familias.
+    </p>
+  </section>
+
+  <section class="stories-cta">
+    <div class="public-container stories-cta-inner">
+      <div>
+        <p class="public-eyebrow">TU HISTORIA PUEDE EMPEZAR HOY</p>
+        <h2 class="public-heading">¿Listo para conocer a tu compañero?</h2>
+        <p class="public-lead">Explora las mascotas que buscan un hogar y descubre con quién compartir el próximo capítulo.</p>
+      </div>
+      <a class="public-button" routerLink="/catalogo">Ver mascotas disponibles <span>→</span></a>
+    </div>
+  </section>
+</main>

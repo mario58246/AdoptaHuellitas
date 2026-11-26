@@ -154,7 +154,7 @@ export class SeguimientoAdminComponent implements OnInit {
         this.cdr.markForCheck();
       },
       error: () => {
-        this.error = 'No se pudieron cargar los reportes. Revisá el backend.';
+        this.error = 'No se pudieron cargar los reportes. Verifica el backend.';
         this.cdr.markForCheck();
       },
     });

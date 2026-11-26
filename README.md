@@ -125,6 +125,7 @@ Panel en **`http://localhost:4200/admin`**. La landing pública sigue en `http:/
 - Si no tenés superusuario: `cd backend && python manage.py createsuperuser`.
 - El token JWT se guarda en `localStorage` (`adopta_sesion`) y se envía automáticamente en cada petición.
 - Pantallas: Resumen, Mascotas (CRUD + validación de microchip), Solicitudes (aprobar/rechazar), Seguimiento (matriz de 15 reportes y semáforo) e Historial médico.
+- La barra lateral muestra los iconos y sus etiquetas; el login permite mostrar u ocultar la contraseña.
 - La URL de la API está en `frontend/src/app/core/services/api.service.ts` (`API_BASE_URL`); cámbiala por la de Render al desplegar.
 
 Estructura del frontend:

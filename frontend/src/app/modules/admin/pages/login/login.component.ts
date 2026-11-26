@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../../../../core/services/auth.service';
@@ -10,7 +10,7 @@ import { adminStyles } from '../../admin.styles';
   template: `
     <section class="adm-login">
       <form class="adm-login-card" (ngSubmit)="ingresar()" #formulario="ngForm">
-        <div class="adm-brand-icon">🐾</div>
+        <img class="adm-login-logo" src="assets/logo-adopta-huellitas.png" alt="Adopta Huellitas" />
         <h1>Panel del refugio</h1>
         <p>Ingresá con tu usuario de administrador para gestionar adopciones.</p>
 
@@ -28,15 +28,26 @@ import { adminStyles } from '../../admin.styles';
         </div>
         <div class="adm-field">
           <label for="clave">Contraseña</label>
-          <input
-            id="clave"
-            class="adm-input"
-            type="password"
-            autocomplete="current-password"
-            [(ngModel)]="clave"
-            name="clave"
-            required
-          />
+          <div class="adm-password">
+            <input
+              id="clave"
+              class="adm-input"
+              [type]="verClave ? 'text' : 'password'"
+              autocomplete="current-password"
+              [(ngModel)]="clave"
+              name="clave"
+              required
+            />
+            <button
+              class="adm-password-toggle"
+              type="button"
+              (click)="toggleClave()"
+              [attr.aria-label]="verClave ? 'Ocultar contraseña' : 'Ver contraseña'"
+              [attr.aria-pressed]="verClave"
+            >
+              {{ verClave ? 'Ocultar' : 'Ver' }}
+            </button>
+          </div>
         </div>
 
         @if (error) {
@@ -55,11 +66,18 @@ import { adminStyles } from '../../admin.styles';
 export class LoginComponent {
   private readonly auth = inject(AuthService);
   private readonly router = inject(Router);
+  private readonly cdr = inject(ChangeDetectorRef);
 
   usuario = '';
   clave = '';
+  verClave = false;
   cargando = false;
   error = '';
+
+  toggleClave(): void {
+    this.verClave = !this.verClave;
+    this.cdr.markForCheck();
+  }
 
   ingresar(): void {
     this.error = '';

@@ -16,7 +16,7 @@ interface Enlace {
     <div class="adm-layout">
       <aside class="adm-sidebar">
         <div class="adm-brand">
-          <span class="adm-brand-icon">🐾</span>
+          <img class="adm-brand-logo" src="assets/logo-adopta-huellitas.png" alt="" aria-hidden="true" />
           <span>Adopta <strong>Huellitas</strong><small>Panel del refugio</small></span>
         </div>
 
@@ -28,7 +28,7 @@ interface Enlace {
               routerLinkActive="activo"
               [routerLinkActiveOptions]="{ exact: enlace.ruta === '/admin' }"
             >
-              <span class="icono" aria-hidden="true">{{ enlace.icono }}</span>
+              <img class="icono" [src]="enlace.icono" alt="" aria-hidden="true" />
               <span class="texto">{{ enlace.etiqueta }}</span>
             </a>
           }
@@ -58,11 +58,11 @@ export class AdminShellComponent {
   readonly auth = inject(AuthService);
 
   readonly enlaces: Enlace[] = [
-    { ruta: '/admin', etiqueta: 'Resumen', icono: '◧' },
-    { ruta: '/admin/mascotas', etiqueta: 'Mascotas', icono: '🐾' },
-    { ruta: '/admin/solicitudes', etiqueta: 'Solicitudes', icono: '✉' },
-    { ruta: '/admin/seguimiento', etiqueta: 'Seguimiento', icono: '◉' },
-    { ruta: '/admin/historial', etiqueta: 'Historial médico', icono: '✚' },
+    { ruta: '/admin', etiqueta: 'Resumen', icono: 'assets/iconos/resumen.png' },
+    { ruta: '/admin/mascotas', etiqueta: 'Mascotas', icono: 'assets/iconos/mascotas.png' },
+    { ruta: '/admin/solicitudes', etiqueta: 'Solicitudes', icono: 'assets/iconos/solicitudes.png' },
+    { ruta: '/admin/seguimiento', etiqueta: 'Seguimiento', icono: 'assets/iconos/seguimiento.png' },
+    { ruta: '/admin/historial', etiqueta: 'Historial médico', icono: 'assets/iconos/historial.png' },
   ];
 
   get inicial(): string {

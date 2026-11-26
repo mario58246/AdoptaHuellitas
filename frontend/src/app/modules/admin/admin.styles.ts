@@ -8,8 +8,9 @@ export const adminStyles = `
 .adm-sidebar { width:236px; flex:0 0 236px; background:#102825; color:#EAF5F2;
   padding:24px 18px; display:flex; flex-direction:column; gap:28px; }
 .adm-brand { display:flex; align-items:center; gap:10px; font-size:16px; font-weight:700; }
-.adm-brand-icon { width:38px; height:38px; border-radius:12px; background:#167C6C;
-  display:grid; place-items:center; font-size:20px; }
+.adm-brand-logo { width:34px; height:34px; object-fit:contain; flex:0 0 34px;
+  filter:brightness(0) invert(1); }
+.adm-login-logo { display:block; width:64px; height:64px; object-fit:contain; margin:0 auto 2px; }
 .adm-brand small { display:block; font-size:11px; font-weight:500; color:#9CBDB6; }
 .adm-nav { display:flex; flex-direction:column; gap:4px; }
 .adm-nav-label { font-size:10px; letter-spacing:.12em; text-transform:uppercase;
@@ -18,7 +19,9 @@ export const adminStyles = `
   color:#C4DCD6; text-decoration:none; font-size:13px; font-weight:500; transition:.15s; }
 .adm-nav a:hover { background:rgba(255,255,255,.07); color:#fff; }
 .adm-nav a.activo { background:#167C6C; color:#fff; box-shadow:0 6px 16px rgba(22,124,108,.35); }
-.adm-nav a span.icono { width:18px; text-align:center; font-size:15px; }
+.adm-nav a img.icono { width:18px; height:18px; object-fit:contain; opacity:.82; flex:0 0 18px; }
+.adm-nav a.activo img.icono { opacity:1; filter:brightness(0) invert(1); }
+.adm-nav a span.texto { white-space:nowrap; }
 .adm-sidebar-foot { margin-top:auto; border-top:1px solid rgba(255,255,255,.1);
   padding-top:16px; font-size:11px; color:#8FB0A9; }
 
@@ -111,11 +114,28 @@ export const adminStyles = `
 .adm-login-card .adm-field { margin-bottom:14px; }
 .adm-login-card .adm-btn { width:100%; margin-top:8px; }
 .adm-login-volver { display:block; margin-top:18px; text-align:center; font-size:12px; }
+.adm-password { position:relative; }
+.adm-password .adm-input { padding-right:76px; }
+.adm-password-toggle { position:absolute; right:7px; top:50%; transform:translateY(-50%);
+  border:0; background:transparent; color:#167C6C; font-size:12px; font-weight:700;
+  font-family:inherit; cursor:pointer; padding:6px 8px; }
+.adm-password-toggle:hover { text-decoration:underline; }
 
 @media (max-width:900px) {
-  .adm-sidebar { width:auto; flex-basis:auto; padding:14px; gap:14px; }
+  .adm-sidebar { width:210px; flex-basis:210px; padding:18px 12px; gap:16px; }
   .adm-sidebar .adm-nav-label, .adm-sidebar-foot, .adm-brand small { display:none; }
-  .adm-nav a { padding:9px; } .adm-nav a span.texto { display:none; }
+  .adm-brand { font-size:14px; }
+  .adm-nav a { padding:10px 8px; font-size:12px; gap:8px; }
   .adm-content { padding:18px; } .adm-form { grid-template-columns:1fr; }
+}
+
+@media (max-width:620px) {
+  .adm-layout { flex-direction:column; }
+  .adm-sidebar { width:100%; flex-basis:auto; padding:12px 14px; gap:10px; }
+  .adm-nav { flex-direction:row; flex-wrap:wrap; gap:6px; }
+  .adm-nav a { flex:1 1 auto; justify-content:center; padding:8px; }
+  .adm-nav a span.texto { white-space:normal; }
+  .adm-topbar { padding:12px 16px; }
+  .adm-content { padding:16px; }
 }
 `;

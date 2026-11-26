@@ -1,4 +1,5 @@
 import { Component, OnInit, computed, inject, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { Mascota } from './core/models/api.models';
 import { ApiService } from './core/services/api.service';
 
@@ -18,6 +19,7 @@ interface PetProfile {
 
 @Component({
   selector: 'app-root',
+  imports: [RouterLink],
   templateUrl: './home.html',
 })
 export class App implements OnInit {
@@ -28,6 +30,8 @@ export class App implements OnInit {
   readonly speciesFilter = signal<SpeciesFilter>('Todos');
   readonly favorites = signal<string[]>([]);
   readonly openFaq = signal<number | null>(0);
+  readonly totalMascotas = signal(0);
+  readonly maxFichas = 20;
 
   readonly pets = signal<PetProfile[]>([
     {
@@ -92,7 +96,10 @@ export class App implements OnInit {
   ngOnInit(): void {
     this.api.mascotas({ estado_adopcion: 'Disponible' }).subscribe({
       next: (respuesta) => {
-        this.pets.set(respuesta.results.map((m) => this.mapearMascota(m)));
+        this.totalMascotas.set(respuesta.results.length);
+        this.pets.set(
+          respuesta.results.slice(0, this.maxFichas).map((m) => this.mapearMascota(m)),
+        );
       },
       error: () => {
         // Sin backend se conservan los perfiles de ejemplo para no romper la landing.
@@ -115,9 +122,18 @@ export class App implements OnInit {
       species: m.especie,
       size: m.tamaño,
       description: m.historia || 'Conocé más sobre este compañero escribiéndonos.',
-      image: m.imagen_display || 'assets/hero-mascotas.webp',
+      image: m.imagen_display || this.imagenGenerica(m.especie),
       imageAlt: `${m.nombre}, ${m.especie.toLowerCase()} en adopción`,
     };
+  }
+
+  private imagenGenerica(especie: Species): string {
+    const imagenes: Record<Species, string> = {
+      Perro: 'assets/mascotas/mascota-generica-1.png',
+      Gato: 'assets/mascotas/gato-generico.png',
+      Otro: 'assets/mascotas/mascota-generica-2.png',
+    };
+    return imagenes[especie] ?? imagenes.Otro;
   }
 
   toggleMenu(): void {

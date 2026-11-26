@@ -118,6 +118,8 @@ h1, h2, h3 { font-family: 'Franklin Gothic Medium', 'Trebuchet MS', sans-serif; 
 .pet-link span, .story-copy a span { transition: transform .18s ease; }
 .pet-link:hover span, .story-copy a:hover span { transform: translateX(4px); }
 .empty-state { grid-column: 1 / -1; padding: 40px 20px; border: 1px dashed #b6cdc4; border-radius: 10px; color: var(--muted); text-align: center; }
+.catalogo-aviso { margin-top: 22px; padding: 14px 18px; border: 1px solid var(--line); border-radius: 10px; background: rgba(255,255,255,.72); color: var(--muted); text-align: center; font-size: 13px; }
+.catalogo-aviso a { color: var(--green); font-weight: 700; text-decoration: underline; }
 
 .process-section { background: #fff; }
 .centered-heading { max-width: 720px; margin: 0 auto 43px; text-align: center; }

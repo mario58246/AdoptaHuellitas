@@ -22,7 +22,7 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.2c-1.6-1.3-7.5-5.5-7.5-10.1a4.2 4.2 0 0 1 7.5-2.6 4.2 4.2 0 0 1 7.5 2.6c0 4.6-5.9 8.8-7.5 10.1Z"/></svg>
         <span>Quiero ayudar</span>
       </a>
-      <a class="login-link" href="#mascotas">Ingresar</a>
+      <a class="login-link" routerLink="/ingresar">Ingresar</a>
     </div>
   </header>
 
@@ -109,6 +109,13 @@
         <p class="empty-state">No encontramos mascotas con esos filtros. Probá con otra búsqueda.</p>
       }
     </div>
+
+    @if (totalMascotas() > maxFichas) {
+      <p class="catalogo-aviso">
+        Mostrando {{ maxFichas }} de {{ totalMascotas() }} mascotas disponibles.
+        <a routerLink="/ingresar">Ingresá</a> para ver el catálogo completo.
+      </p>
+    }
   </section>
 
   <section class="process-section section-pad" id="proceso">

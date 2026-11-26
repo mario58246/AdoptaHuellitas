@@ -72,7 +72,7 @@ npm install
 npm start
 ```
 
-SPA: `http://localhost:4200/`
+SPA: `http://localhost:4200/` · Accesos: `http://localhost:4200/ingresar` · Panel: `http://localhost:4200/admin`
 
 ## Endpoints principales
 
@@ -129,7 +129,9 @@ Panel en **`http://localhost:4200/admin`**. La landing pública sigue en `http:/
 - Si no tenés superusuario: `cd backend && python manage.py createsuperuser`.
 - El token JWT se guarda en `localStorage` (`adopta_sesion`) y se envía automáticamente en cada petición.
 - Pantallas: Resumen, Mascotas (alta/edición + microchip ISO, sin borrado), **Bajas** (solo cambio de estado), Solicitudes (aprobar/rechazar), Seguimiento (matriz de 15 reportes y semáforo) e Historial médico.
-- La landing pública toma las mascotas `Disponible` desde la API; si el backend no responde conserva los perfiles de ejemplo.
+- La landing pública toma las mascotas `Disponible` desde la API y muestra **máximo 20 fichas**; si hay más, invita a ingresar para ver el catálogo completo.
+- Si una mascota no tiene imagen cargada, se usan los vectores grises semitransparentes de `frontend/public/assets/mascotas/` según su especie. La imagen del hero solo se usa en “Un hogar cambia una vida”.
+- `http://localhost:4200/ingresar` muestra las opciones de adoptante (pendiente del módulo de Mario) y administrador (redirige al login del panel).
 - La barra lateral muestra los iconos y sus etiquetas; el login permite mostrar u ocultar la contraseña.
 - La URL de la API está en `frontend/src/app/core/services/api.service.ts` (`API_BASE_URL`); cámbiala por la de Render al desplegar.
 
@@ -139,6 +141,7 @@ Estructura del frontend:
 frontend/src/app/
 ├── core/          # modelos, ApiService, AuthService, interceptor y guard
 ├── modules/admin/ # shell, rutas, estilos y páginas del panel
+├── modules/public/# pantalla de accesos (/ingresar)
 ├── app.ts         # landing pública de Mario (catálogo cargado desde la API)
 └── app-shell.ts   # raíz con <router-outlet>
 ```

@@ -9,7 +9,7 @@ export const adminStyles = `
   padding:24px 18px; display:flex; flex-direction:column; gap:28px; }
 .adm-brand { display:flex; align-items:center; gap:10px; font-size:16px; font-weight:700; }
 .adm-brand-logo { width:34px; height:34px; object-fit:contain; flex:0 0 34px;
-  filter:brightness(0) invert(1); }
+  padding:3px; border-radius:50%; background:rgba(255,255,255,.12); }
 .adm-login-logo { display:block; width:64px; height:64px; object-fit:contain; margin:0 auto 2px; }
 .adm-brand small { display:block; font-size:11px; font-weight:500; color:#9CBDB6; }
 .adm-nav { display:flex; flex-direction:column; gap:4px; }
@@ -82,6 +82,8 @@ export const adminStyles = `
 .adm-btn.primary:hover { background:#0F6658; }
 .adm-btn.ghost { background:#fff; color:#17312E; border:1px solid #DCE8E5; }
 .adm-btn.ghost:hover { background:#F4F8F7; }
+.adm-btn.info { background:#E4F0FC; color:#3778C2; }
+.adm-btn.info:hover { background:#D3E7FA; }
 .adm-btn.danger { background:#FCE8EA; color:#C64B52; }
 .adm-btn.small { padding:6px 11px; font-size:12px; border-radius:8px; }
 .adm-btn:disabled { opacity:.55; cursor:not-allowed; }

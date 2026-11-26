@@ -32,7 +32,7 @@ export class App implements OnInit {
   readonly favorites = signal<string[]>([]);
   readonly openFaq = signal<number | null>(0);
   readonly totalMascotas = signal(0);
-  readonly maxFichas = 20;
+  readonly maxFichas = 6;
 
   readonly pets = signal<PetProfile[]>([
     {

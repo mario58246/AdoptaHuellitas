@@ -73,7 +73,7 @@
         <h2>Compañeros que esperan</h2>
         <p class="section-intro">Cada uno tiene su propia historia. Quizás ahora les toca escribirla juntos.</p>
       </div>
-      <a class="button button-outline" href="#mascotas">Ver todos los animales <span aria-hidden="true">↗</span></a>
+      <a class="button button-outline" routerLink="/ingresar">Ver todos los animales <span aria-hidden="true">↗</span></a>
     </div>
 
     <div class="pet-tools">
@@ -89,8 +89,8 @@
     </div>
 
     <div class="pet-grid">
-      @for (pet of filteredPets(); track pet.id ?? pet.name) {
-        <article class="pet-card">
+      @for (pet of filteredPets(); track pet.id ?? pet.name; let i = $index) {
+        <article class="pet-card" [style.animation-delay.ms]="i * 80">
           <div class="pet-image-wrap">
             <img [src]="pet.image" [alt]="pet.imageAlt" loading="lazy" (error)="usarFallback(pet)" />
             <span class="availability"><span></span> Disponible</span>

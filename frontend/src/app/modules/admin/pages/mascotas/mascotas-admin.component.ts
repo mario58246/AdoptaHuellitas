@@ -84,7 +84,7 @@ interface FormularioMascota {
               <td>{{ m.fecha_ingreso | date:'dd/MM/yy' }}</td>
               <td>
                 <div class="adm-acciones">
-                  <button class="adm-btn ghost small" type="button" (click)="abrirEditar(m)">Editar</button>
+                  <button class="adm-btn info small" type="button" (click)="abrirEditar(m)">Editar</button>
                   <button class="adm-btn danger small" type="button" [disabled]="cambiandoId === m.id"
                     (click)="darDeBaja(m)">Dar de baja</button>
                 </div>
@@ -375,7 +375,7 @@ export class MascotasAdminComponent implements OnInit {
   darDeBaja(m: Mascota): void {
     this.abrirConfirmacion(
       `Dar de baja a ${m.nombre}`,
-      'Pasará a la sección Bajas. Su historial médico y seguimiento se conservan.',
+      'Pasará a la sección Bajas. Su historial y seguimiento se conservan solo durante 5 años; después se eliminan por completo de la base de datos.',
       'Dar de baja',
       () => this.ejecutarBaja(m),
     );

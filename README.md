@@ -128,7 +128,7 @@ Panel en **`http://localhost:4200/admin`**. La landing pública sigue en `http:/
 - Ingresá con el superusuario creado en local (`admin`) y su contraseña.
 - Si no tenés superusuario: `cd backend && python manage.py createsuperuser`.
 - El token JWT se guarda en `localStorage` (`adopta_sesion`) y se envía automáticamente en cada petición.
-- Pantallas: Resumen, Mascotas (alta/edición + microchip ISO, sin borrado), **Bajas** (botón **Reestablecer**), Solicitudes (aprobar/rechazar), Seguimiento (matriz de 15 reportes y semáforo) e Historial médico. Dar de baja y reestablecer usan modales propios de Angular, sin avisos nativos del navegador.
+- Pantallas: Resumen, Mascotas (alta/edición + microchip ISO, sin borrado), **Bajas** (botón **Reestablecer**), Solicitudes (aprobar/rechazar), Seguimiento (matriz de 15 reportes y semáforo) e Historial médico. Dar de baja, reestablecer, aprobar/rechazar solicitudes y aprobar/corregir reportes usan modales propios de Angular, sin avisos nativos del navegador.
 - La landing pública toma las mascotas `Disponible` desde la API y muestra **máximo 6 fichas** con entrada animada y efecto hover; si hay más, invita a ingresar para ver el catálogo completo.
 - Si una mascota no tiene imagen cargada, se usan los vectores grises semitransparentes de `frontend/public/assets/mascotas/` según su especie. La imagen del hero solo se usa en “Un hogar cambia una vida”.
 - En el alta/edición de mascotas se puede subir una foto real desde el equipo o usar una URL externa. El archivo se envía como `multipart/form-data` y se sirve desde `/media/`; la API devuelve la URL absoluta para que la imagen aparezca en el panel y en la landing. En producción, Cloudinary reemplaza al almacenamiento local.

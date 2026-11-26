@@ -3,7 +3,7 @@ import { ChangeDetectorRef, Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Solicitud } from '../../../../core/models/api.models';
 import { ApiService } from '../../../../core/services/api.service';
-import { adminStyles } from '../../admin.styles';
+import { adminConfirmStyles, adminStyles } from '../../admin.styles';
 
 @Component({
   selector: 'app-solicitudes-admin',
@@ -72,8 +72,34 @@ import { adminStyles } from '../../admin.styles';
         </tbody>
       </table>
     </div>
+
+    @if (pendiente) {
+      <div class="adm-overlay" (click)="cerrarModal()">
+        <div class="adm-modal adm-confirm" role="dialog" aria-modal="true"
+          (click)="$event.stopPropagation()">
+          <div class="adm-confirm-icon" [class]="pendiente.aprobar ? 'verde' : 'rojo'" aria-hidden="true">
+            {{ pendiente.aprobar ? '✓' : '!' }}
+          </div>
+          <h3>{{ pendiente.aprobar ? 'Aprobar adopción' : 'Rechazar solicitud' }}</h3>
+          <p>
+            @if (pendiente.aprobar) {
+              Se crearán los 15 reportes de seguimiento para {{ pendiente.solicitud.mascota_nombre }}.
+            } @else {
+              La solicitud de {{ pendiente.solicitud.nombre_adoptante }} quedará marcada como rechazada.
+            }
+          </p>
+          <div class="adm-modal-foot">
+            <button class="adm-btn ghost" type="button" (click)="cerrarModal()">Cancelar</button>
+            <button class="adm-btn" [class.primary]="pendiente.aprobar" [class.danger]="!pendiente.aprobar"
+              type="button" (click)="confirmarResolucion()">
+              {{ pendiente.aprobar ? 'Aprobar' : 'Rechazar' }}
+            </button>
+          </div>
+        </div>
+      </div>
+    }
   `,
-  styles: [adminStyles],
+  styles: [adminStyles, adminConfirmStyles],
 })
 export class SolicitudesAdminComponent implements OnInit {
   private readonly api = inject(ApiService);
@@ -83,6 +109,7 @@ export class SolicitudesAdminComponent implements OnInit {
   visibles: Solicitud[] = [];
   filtro = '';
   seleccionada: number | null = null;
+  pendiente: { solicitud: Solicitud; aprobar: boolean } | null = null;
   error = '';
   mensaje = '';
 
@@ -111,22 +138,31 @@ export class SolicitudesAdminComponent implements OnInit {
   }
 
   resolver(s: Solicitud, aprobar: boolean): void {
-    const texto = aprobar
-      ? `¿Aprobar la adopción de ${s.mascota_nombre} por ${s.nombre_adoptante}? Se crearán 15 reportes de seguimiento.`
-      : `¿Rechazar la solicitud de ${s.nombre_adoptante}?`;
-    if (!confirm(texto)) {
+    this.pendiente = { solicitud: s, aprobar };
+    this.error = '';
+    this.cdr.markForCheck();
+  }
+
+  cerrarModal(): void {
+    this.pendiente = null;
+    this.cdr.markForCheck();
+  }
+
+  confirmarResolucion(): void {
+    const pendiente = this.pendiente;
+    this.pendiente = null;
+    if (!pendiente) {
       return;
     }
 
-    this.error = '';
-    const peticion = aprobar
-      ? this.api.aprobarSolicitud(s.id)
-      : this.api.rechazarSolicitud(s.id);
+    const peticion = pendiente.aprobar
+      ? this.api.aprobarSolicitud(pendiente.solicitud.id)
+      : this.api.rechazarSolicitud(pendiente.solicitud.id);
 
     peticion.subscribe({
       next: () => {
-        this.mensaje = aprobar
-          ? `Adopción aprobada. El plan de 15 reportes ya está activo.`
+        this.mensaje = pendiente.aprobar
+          ? 'Adopción aprobada. El plan de 15 reportes ya está activo.'
           : 'Solicitud rechazada.';
         this.cargar();
         this.cdr.markForCheck();

@@ -3,7 +3,7 @@ import { ChangeDetectorRef, Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Seguimiento } from '../../../../core/models/api.models';
 import { ApiService } from '../../../../core/services/api.service';
-import { adminStyles } from '../../admin.styles';
+import { adminConfirmStyles, adminStyles } from '../../admin.styles';
 
 interface Grupo {
   solicitud: number;
@@ -83,8 +83,39 @@ interface Grupo {
     } @empty {
       <div class="adm-card adm-vacio">No hay reportes de seguimiento todavía. Aprobá una solicitud para generarlos.</div>
     }
+
+    @if (pendiente) {
+      <div class="adm-overlay" (click)="cerrarModal()">
+        <div class="adm-modal adm-confirm" role="dialog" aria-modal="true"
+          (click)="$event.stopPropagation()">
+          <div class="adm-confirm-icon" [class]="pendiente.aprobar ? 'verde' : 'azul'" aria-hidden="true">
+            {{ pendiente.aprobar ? '✓' : '✎' }}
+          </div>
+          <h3>{{ pendiente.aprobar ? 'Aprobar reporte' : 'Corregir reporte' }}</h3>
+          <p>
+            @if (pendiente.aprobar) {
+              Retroalimentación para el adoptante sobre el reporte del mes {{ pendiente.reporte.mes_programado }}.
+            } @else {
+              Indicá qué debe corregir el adoptante en el reporte del mes {{ pendiente.reporte.mes_programado }}.
+            }
+          </p>
+          <div class="adm-field">
+            <label for="retroalimentacion">{{ pendiente.aprobar ? 'Mensaje (opcional)' : 'Motivo de la corrección' }}</label>
+            <textarea id="retroalimentacion" class="adm-input" [(ngModel)]="retroalimentacion"
+              [placeholder]="pendiente.aprobar ? '¡Excelente seguimiento!' : 'Adjuntá la evidencia del mes correspondiente.'"></textarea>
+          </div>
+          <div class="adm-modal-foot">
+            <button class="adm-btn ghost" type="button" (click)="cerrarModal()">Cancelar</button>
+            <button class="adm-btn" [class.primary]="pendiente.aprobar" [class.info]="!pendiente.aprobar"
+              type="button" (click)="confirmarRevision()">
+              {{ pendiente.aprobar ? 'Aprobar' : 'Solicitar corrección' }}
+            </button>
+          </div>
+        </div>
+      </div>
+    }
   `,
-  styles: [adminStyles],
+  styles: [adminStyles, adminConfirmStyles],
 })
 export class SeguimientoAdminComponent implements OnInit {
   private readonly api = inject(ApiService);
@@ -95,6 +126,8 @@ export class SeguimientoAdminComponent implements OnInit {
   filtro = '';
   error = '';
   mensaje = '';
+  pendiente: { reporte: Seguimiento; aprobar: boolean } | null = null;
+  retroalimentacion = '';
 
   ngOnInit(): void {
     this.cargar();
@@ -147,18 +180,33 @@ export class SeguimientoAdminComponent implements OnInit {
   }
 
   revisar(reporte: Seguimiento, aprobar: boolean): void {
-    const respuesta = aprobar
-      ? prompt('Retroalimentación para el adoptante (opcional):', '¡Excelente seguimiento!') ?? ''
-      : prompt('Indicá qué debe corregir el adoptante:', 'Adjuntá la evidencia del mes correspondiente.') ?? '';
-
+    this.pendiente = { reporte, aprobar };
+    this.retroalimentacion = aprobar ? '¡Excelente seguimiento!' : '';
     this.error = '';
-    const peticion = aprobar
-      ? this.api.aprobarReporte(reporte.id, respuesta)
-      : this.api.solicitarCorreccion(reporte.id, respuesta);
+    this.cdr.markForCheck();
+  }
+
+  cerrarModal(): void {
+    this.pendiente = null;
+    this.cdr.markForCheck();
+  }
+
+  confirmarRevision(): void {
+    const pendiente = this.pendiente;
+    this.pendiente = null;
+    if (!pendiente) {
+      return;
+    }
+
+    const peticion = pendiente.aprobar
+      ? this.api.aprobarReporte(pendiente.reporte.id, this.retroalimentacion)
+      : this.api.solicitarCorreccion(pendiente.reporte.id, this.retroalimentacion);
 
     peticion.subscribe({
       next: () => {
-        this.mensaje = aprobar ? 'Reporte aprobado.' : 'Corrección solicitada al adoptante.';
+        this.mensaje = pendiente.aprobar
+          ? 'Reporte aprobado.'
+          : 'Corrección solicitada al adoptante.';
         this.cargar();
         this.cdr.markForCheck();
       },

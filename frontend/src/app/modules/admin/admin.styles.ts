@@ -147,7 +147,14 @@ export const adminConfirmStyles = `
 .adm-confirm { width:min(430px,100%); text-align:center; padding:30px; }
 .adm-confirm-icon { width:52px; height:52px; margin:0 auto 14px; border-radius:50%;
   background:#FFF1D6; color:#B7791F; display:grid; place-items:center; font-size:24px; }
+.adm-confirm-icon.verde { background:#E3F4EC; color:#167C6C; }
+.adm-confirm-icon.azul { background:#E4F0FC; color:#3778C2; }
+.adm-confirm-icon.rojo { background:#FCE8EA; color:#C64B52; }
 .adm-confirm h3 { margin:0 0 10px; font-size:19px; }
 .adm-confirm p { margin:0; color:#667975; font-size:13px; line-height:1.6; }
+.adm-confirm textarea { min-height:96px; resize:vertical; text-align:left; }
+.adm-confirm .adm-field { text-align:left; margin-top:16px; }
+.adm-confirm .adm-field label { display:block; margin-bottom:7px; font-size:12px;
+  font-weight:700; color:#17312E; }
 .adm-confirm .adm-modal-foot { justify-content:center; margin-top:24px; }
 `;

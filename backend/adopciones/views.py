@@ -2,7 +2,7 @@ from django.utils import timezone
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.exceptions import PermissionDenied, ValidationError
-from rest_framework.permissions import IsAdminUser, IsAuthenticated
+from rest_framework.permissions import AllowAny, IsAdminUser, IsAuthenticated
 from rest_framework.response import Response
 
 from .models import (
@@ -15,10 +15,32 @@ from .models import (
 from .serializers import (
     HistorialMedicoSerializer,
     MascotaRescatadaSerializer,
+    RegistroAdoptanteSerializer,
     SeguimientoPostAdopcionSerializer,
     SolicitudAdopcionSerializer,
 )
 from .services import aprobar_solicitud, purgar_bajas_vencidas, rechazar_solicitud
+
+
+class RegistroAdoptanteView(viewsets.GenericViewSet):
+    serializer_class = RegistroAdoptanteSerializer
+    permission_classes = [AllowAny]
+    http_method_names = ["post", "options"]
+
+    def create(self, request):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        usuario = serializer.save()
+        return Response(
+            {
+                "id": usuario.pk,
+                "username": usuario.get_username(),
+                "email": usuario.email,
+                "first_name": usuario.first_name,
+                "last_name": usuario.last_name,
+            },
+            status=201,
+        )
 
 
 class MascotaViewSet(viewsets.ModelViewSet):

@@ -83,7 +83,16 @@ export class LoginComponent {
     this.error = '';
     this.cargando = true;
     this.auth.login(this.usuario.trim(), this.clave).subscribe({
-      next: () => this.router.navigateByUrl('/admin'),
+      next: () => {
+        if (!this.auth.isAdmin()) {
+          this.auth.clearSession();
+          this.error = 'Esta cuenta no tiene permisos de administrador.';
+          this.cargando = false;
+          this.cdr.markForCheck();
+          return;
+        }
+        this.router.navigateByUrl('/admin');
+      },
       error: () => {
         this.error = 'No se pudo iniciar sesión. Verifica el usuario y la contraseña.';
         this.cargando = false;

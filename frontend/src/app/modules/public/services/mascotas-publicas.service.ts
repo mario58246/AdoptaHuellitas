@@ -26,7 +26,11 @@ export class MascotasPublicasService {
       .pipe(
         map((respuesta) =>
           respuesta.results
-            .filter((mascota) => mascota.especie === 'Perro' || mascota.especie === 'Gato')
+            .filter(
+              (mascota) =>
+                !mascota.archivada &&
+                (mascota.especie === 'Perro' || mascota.especie === 'Gato'),
+            )
             .map((mascota) => this.mapear(mascota)),
         ),
       );

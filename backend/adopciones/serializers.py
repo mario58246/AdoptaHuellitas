@@ -1,5 +1,9 @@
+from django.contrib.auth import get_user_model
+from django.contrib.auth.password_validation import validate_password
+from django.core.exceptions import ValidationError as DjangoValidationError
 from rest_framework import serializers
 from rest_framework.request import Request
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 from .imagenes import validar_url_imagen
 from .models import (
@@ -9,6 +13,82 @@ from .models import (
     SeguimientoPostAdopcion,
     SolicitudAdopcion,
 )
+
+User = get_user_model()
+
+
+class RegistroAdoptanteSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(write_only=True, trim_whitespace=False)
+    password_confirmacion = serializers.CharField(
+        write_only=True, trim_whitespace=False
+    )
+
+    class Meta:
+        model = User
+        fields = [
+            "id",
+            "username",
+            "email",
+            "first_name",
+            "last_name",
+            "password",
+            "password_confirmacion",
+        ]
+        read_only_fields = ["id"]
+        extra_kwargs = {
+            "email": {"required": True},
+            "first_name": {"required": True},
+            "last_name": {"required": True},
+        }
+
+    def validate_email(self, value):
+        email = value.strip().lower()
+        if User.objects.filter(email__iexact=email).exists():
+            raise serializers.ValidationError(
+                "Ya existe una cuenta registrada con este correo."
+            )
+        return email
+
+    def validate(self, attrs):
+        password = attrs.get("password")
+        if password != attrs.get("password_confirmacion"):
+            raise serializers.ValidationError(
+                {"password_confirmacion": "Las contraseñas no coinciden."}
+            )
+
+        user = User(
+            username=attrs.get("username"),
+            email=attrs.get("email"),
+            first_name=attrs.get("first_name"),
+            last_name=attrs.get("last_name"),
+        )
+        try:
+            validate_password(password, user=user)
+        except DjangoValidationError as error:
+            raise serializers.ValidationError(
+                {"password": list(error.messages)}
+            ) from error
+        return attrs
+
+    def create(self, validated_data):
+        validated_data.pop("password_confirmacion")
+        password = validated_data.pop("password")
+        return User.objects.create_user(password=password, **validated_data)
+
+
+class AdoptaTokenObtainPairSerializer(TokenObtainPairSerializer):
+    def validate(self, attrs):
+        data = super().validate(attrs)
+        data.update(
+            {
+                "is_staff": self.user.is_staff,
+                "username": self.user.get_username(),
+                "first_name": self.user.first_name,
+                "last_name": self.user.last_name,
+                "email": self.user.email,
+            }
+        )
+        return data
 
 
 class MascotaRescatadaSerializer(serializers.ModelSerializer):
@@ -92,6 +172,16 @@ class HistorialMedicoSerializer(serializers.ModelSerializer):
 class SolicitudAdopcionSerializer(serializers.ModelSerializer):
     adoptante = serializers.PrimaryKeyRelatedField(read_only=True)
     mascota_nombre = serializers.CharField(source="mascota.nombre", read_only=True)
+
+    def validate_mascota(self, mascota):
+        if (
+            mascota.estado_adopcion != EstadoAdopcion.DISPONIBLE
+            or mascota.archivada
+        ):
+            raise serializers.ValidationError(
+                "Esta mascota ya no está disponible para nuevas solicitudes."
+            )
+        return mascota
 
     class Meta:
         model = SolicitudAdopcion

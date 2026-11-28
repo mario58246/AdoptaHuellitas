@@ -115,6 +115,117 @@ class ApiTests(TestCase):
             direccion_residencia="Calle 1 # 2-3",
         )
 
+    def test_registro_adoptante_crea_usuario_sin_permisos_admin(self):
+        respuesta = self.client.post(
+            "/api/usuarios/registro/",
+            {
+                "username": "nueva-persona",
+                "email": "persona@example.com",
+                "first_name": "Nueva",
+                "last_name": "Persona",
+                "password": "Dificil!2026-segura",
+                "password_confirmacion": "Dificil!2026-segura",
+            },
+            format="json",
+        )
+
+        self.assertEqual(respuesta.status_code, 201, respuesta.data)
+        usuario = get_user_model().objects.get(username="nueva-persona")
+        self.assertTrue(usuario.check_password("Dificil!2026-segura"))
+        self.assertFalse(usuario.is_staff)
+        self.assertFalse(usuario.is_superuser)
+
+    def test_registro_rechaza_contrasenas_distintas_y_correo_existente(self):
+        datos = {
+            "username": "nueva-persona",
+            "email": "persona@example.com",
+            "first_name": "Nueva",
+            "last_name": "Persona",
+            "password": "Dificil!2026-segura",
+            "password_confirmacion": "Otra!2026-segura",
+        }
+        respuesta = self.client.post(
+            "/api/usuarios/registro/", datos, format="json"
+        )
+        self.assertEqual(respuesta.status_code, 400)
+        self.assertIn("password_confirmacion", respuesta.data)
+
+        datos["password_confirmacion"] = datos["password"]
+        datos["email"] = self.usuario.email
+        respuesta = self.client.post(
+            "/api/usuarios/registro/", datos, format="json"
+        )
+        self.assertEqual(respuesta.status_code, 400)
+        self.assertIn("email", respuesta.data)
+
+    def test_login_jwt_informa_separadamente_roles(self):
+        respuesta_adoptante = self.client.post(
+            "/api/token/",
+            {"username": self.usuario.username, "password": "clave-segura-123"},
+            format="json",
+        )
+        respuesta_admin = self.client.post(
+            "/api/token/",
+            {"username": self.admin.username, "password": "clave-segura-123"},
+            format="json",
+        )
+
+        self.assertEqual(respuesta_adoptante.status_code, 200)
+        self.assertFalse(respuesta_adoptante.data["is_staff"])
+        self.assertEqual(respuesta_adoptante.data["username"], self.usuario.username)
+        self.assertEqual(respuesta_admin.status_code, 200)
+        self.assertTrue(respuesta_admin.data["is_staff"])
+
+    def test_adoptante_autenticado_no_puede_crear_mascotas(self):
+        respuesta_token = self.client.post(
+            "/api/token/",
+            {"username": self.usuario.username, "password": "clave-segura-123"},
+            format="json",
+        )
+        self.client.credentials(
+            HTTP_AUTHORIZATION=f"Bearer {respuesta_token.data['access']}"
+        )
+
+        respuesta = self.client.post(
+            "/api/mascotas/",
+            {
+                "nombre": "Mascota no autorizada",
+                "especie": "Perro",
+                "edad_aproximada_meses": 12,
+                "tamaño": "Mediano",
+                "codigo_chip": "981000444444444",
+            },
+            format="json",
+        )
+
+        self.assertEqual(respuesta.status_code, 403)
+
+    def test_adoptante_no_puede_solicitar_mascota_no_disponible(self):
+        self.client.force_authenticate(self.usuario)
+        datos = {
+            "mascota": self.mascota.id,
+            "nombre_adoptante": "Angie Galindez",
+            "correo_contacto": "angie@example.com",
+            "telefono": "3001234567",
+            "direccion_residencia": "Calle 1 # 2-3",
+        }
+
+        for estado, archivada in (
+            (EstadoAdopcion.EN_PROCESO, False),
+            (EstadoAdopcion.DISPONIBLE, True),
+        ):
+            with self.subTest(estado=estado, archivada=archivada):
+                self.mascota.estado_adopcion = estado
+                self.mascota.archivada = archivada
+                self.mascota.save(update_fields=["estado_adopcion", "archivada"])
+
+                respuesta = self.client.post(
+                    "/api/solicitudes/", datos, format="json"
+                )
+
+                self.assertEqual(respuesta.status_code, 400)
+                self.assertIn("mascota", respuesta.data)
+
     def test_catalogo_publico_listo(self):
         respuesta = self.client.get("/api/mascotas/")
         self.assertEqual(respuesta.status_code, 200)

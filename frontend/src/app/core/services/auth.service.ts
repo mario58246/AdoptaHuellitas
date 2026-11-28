@@ -8,6 +8,19 @@ interface Sesion {
   access: string;
   refresh: string;
   username: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  isStaff: boolean;
+}
+
+export interface RegistroAdoptante {
+  username: string;
+  email: string;
+  first_name: string;
+  last_name: string;
+  password: string;
+  password_confirmacion: string;
 }
 
 const CLAVE_SESION = 'adopta_sesion';
@@ -38,13 +51,34 @@ export class AuthService {
     return this.sesion?.username ?? 'Administración';
   }
 
+  get nombre(): string {
+    const sesion = this.sesion;
+    return [sesion?.firstName, sesion?.lastName].filter(Boolean).join(' ') || this.username;
+  }
+
+  get email(): string {
+    return this.sesion?.email ?? '';
+  }
+
   isLoggedIn(): boolean {
     return Boolean(this.token);
   }
 
+  isAdmin(): boolean {
+    return this.sesion?.isStaff === true;
+  }
+
   login(username: string, password: string): Observable<void> {
     return this.http
-      .post<{ access: string; refresh: string }>(`${API_BASE_URL}/token/`, {
+      .post<{
+        access: string;
+        refresh: string;
+        username: string;
+        first_name: string;
+        last_name: string;
+        email: string;
+        is_staff: boolean;
+      }>(`${API_BASE_URL}/token/`, {
         username,
         password,
       })
@@ -52,15 +86,27 @@ export class AuthService {
         map((tokens) => ({
           access: tokens.access,
           refresh: tokens.refresh,
-          username,
+          username: tokens.username,
+          firstName: tokens.first_name,
+          lastName: tokens.last_name,
+          email: tokens.email,
+          isStaff: tokens.is_staff,
         })),
         tap((sesion) => localStorage.setItem(CLAVE_SESION, JSON.stringify(sesion))),
         map(() => undefined),
       );
   }
 
-  logout(): void {
+  registrar(datos: RegistroAdoptante): Observable<void> {
+    return this.http.post(`${API_BASE_URL}/usuarios/registro/`, datos).pipe(map(() => undefined));
+  }
+
+  clearSession(): void {
     localStorage.removeItem(CLAVE_SESION);
+  }
+
+  logout(): void {
+    this.clearSession();
     this.router.navigateByUrl('/admin/login');
   }
 }

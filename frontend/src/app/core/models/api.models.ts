@@ -66,6 +66,21 @@ export interface Solicitud {
   observaciones_admin: string;
 }
 
+export type SolicitudInput = Pick<
+  Solicitud,
+  | 'mascota'
+  | 'nombre_adoptante'
+  | 'correo_contacto'
+  | 'telefono'
+  | 'direccion_residencia'
+> &
+  Partial<
+    Pick<
+      Solicitud,
+      'caracteristicas_hogar' | 'convivencia_otras_mascotas' | 'motivo_adopcion'
+    >
+  >;
+
 export interface Seguimiento {
   id: number;
   solicitud: number;

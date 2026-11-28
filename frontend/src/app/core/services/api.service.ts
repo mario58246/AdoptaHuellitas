@@ -9,6 +9,7 @@ import {
   ResumenApi,
   Seguimiento,
   Solicitud,
+  SolicitudInput,
 } from '../models/api.models';
 
 /** Cambiar esta URL por la de Render cuando se despliegue el backend. */
@@ -93,6 +94,10 @@ export class ApiService {
       .pipe(map((respuesta) => this.normalizar(respuesta)));
   }
 
+  crearSolicitud(datos: SolicitudInput): Observable<Solicitud> {
+    return this.http.post<Solicitud>(`${API_BASE_URL}/solicitudes/`, datos);
+  }
+
   aprobarSolicitud(id: number, observaciones = ''): Observable<Solicitud> {
     return this.http.post<Solicitud>(`${API_BASE_URL}/solicitudes/${id}/aprobar/`, {
       observaciones,
@@ -115,6 +120,26 @@ export class ApiService {
         params,
       })
       .pipe(map((respuesta) => this.normalizar(respuesta)));
+  }
+
+  enviarEvidencia(
+    id: number,
+    datos: { archivo?: File; url?: string; observaciones?: string },
+  ): Observable<Seguimiento> {
+    const cuerpo = new FormData();
+    if (datos.archivo) {
+      cuerpo.append('archivo_evidencia', datos.archivo, datos.archivo.name);
+    }
+    if (datos.url) {
+      cuerpo.append('url_evidencia', datos.url);
+    }
+    if (datos.observaciones) {
+      cuerpo.append('observaciones_adoptante', datos.observaciones);
+    }
+    return this.http.patch<Seguimiento>(
+      `${API_BASE_URL}/seguimientos/${id}/enviar-evidencia/`,
+      cuerpo,
+    );
   }
 
   aprobarReporte(id: number, retroalimentacion = ''): Observable<Seguimiento> {

@@ -2,9 +2,9 @@ import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
 
-/** Evita entrar al panel sin sesión iniciada. */
+/** Evita que una cuenta de adoptante acceda al panel administrativo. */
 export const authGuard: CanActivateFn = () => {
   const auth = inject(AuthService);
   const router = inject(Router);
-  return auth.isLoggedIn() ? true : router.createUrlTree(['/admin/login']);
+  return auth.isAdmin() ? true : router.createUrlTree(['/admin/login']);
 };

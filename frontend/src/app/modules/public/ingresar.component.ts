@@ -26,14 +26,12 @@ import { RouterLink } from '@angular/router';
           <article class="ingresar-card">
             <span class="ingresar-icono" aria-hidden="true">🐾</span>
             <h2>Soy adoptante</h2>
-            <p>El portal para enviar solicitudes y seguir una adopción estará disponible próximamente.</p>
+            <p>Ingresa o crea una cuenta para iniciar tu proceso de adopción.</p>
             <div class="ingresar-acciones">
-              <button type="button" class="ingresar-btn" disabled>Ingresar</button>
-              <button type="button" class="ingresar-btn outline" disabled>Crear cuenta</button>
+              <a class="ingresar-btn" routerLink="/adoptante/ingresar">Ingresar</a>
+              <a class="ingresar-btn outline" routerLink="/adoptante/registro">Crear cuenta</a>
             </div>
-            <p class="ingresar-nota">
-              El portal del adoptante lo está terminando Mario. Ya estará disponible aquí.
-            </p>
+            <p class="ingresar-nota">Tu cuenta te permitirá gestionar solicitudes y consultar su estado.</p>
           </article>
 
           <article class="ingresar-card admin">

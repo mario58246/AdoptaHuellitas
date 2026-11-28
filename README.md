@@ -76,6 +76,8 @@ SPA: `http://localhost:4200/` · Accesos: `http://localhost:4200/ingresar` · Pa
 
 La sección pública está organizada en páginas independientes: Inicio (`/`), catálogo (`/catalogo`), proceso de adopción (`/como-funciona`) e historias (`/historias`). El catálogo consulta las mascotas disponibles en la API.
 
+El acceso de adoptantes permite crear una cuenta en `/adoptante/registro` e iniciar sesión en `/adoptante/ingresar`. El registro crea usuarios sin permisos administrativos; el inicio de sesión usa JWT en `/api/token/`.
+
 Para agregar mascotas de ejemplo a la base local, desde la raíz:
 
 ```powershell
